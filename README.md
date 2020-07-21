@@ -1,1 +1,1 @@
-# JWT_API_Net_Core_3_1
+# Bearer Token based (JWT) Core 3.1 API authentication.
