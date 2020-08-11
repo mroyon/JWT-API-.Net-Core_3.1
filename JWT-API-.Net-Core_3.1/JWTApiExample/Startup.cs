@@ -40,7 +40,6 @@ namespace JWTApiExample
             {
                 app.UseExceptionHandler("/Error");
             }
-
            
             app.UseRouting();
             app.UseResponseCaching();
@@ -64,8 +63,6 @@ namespace JWTApiExample
                 .ScriptSources(s => s.UnsafeInline())
             );
 
-
-
             app.UseSerilogRequestLogging();
             app.UseHttpsRedirection();
             app.UseAuthentication();
@@ -84,7 +81,6 @@ namespace JWTApiExample
             });
 
             app.UseSwagger();
-
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");

@@ -153,6 +153,16 @@ namespace JWTApiExample.Services
                     };
                 })
                 .AddNewtonsoftJson();
+
+
+            //for session enable
+            //services.AddSession(options =>
+            //{
+            //    options.IdleTimeout = TimeSpan.FromMinutes(2);
+            //    options.Cookie.HttpOnly = true;
+            //    options.Cookie.SameSite = SameSiteMode.None;
+            //    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+            //});
         }
 
         private static void AddLocalizationConfigurations(IServiceCollection services)

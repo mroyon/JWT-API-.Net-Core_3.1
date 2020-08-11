@@ -9,6 +9,7 @@ using System;
 using AppConfig.HelperClasses;
 using Microsoft.AspNetCore.Http.Extensions;
 using WebApiOutCache.Cache;
+using Microsoft.AspNetCore.Http;
 
 namespace JWTApiExample.Controllers
 {
@@ -17,13 +18,16 @@ namespace JWTApiExample.Controllers
     public class MyApiController : Controller
     {
         private readonly IStringLocalizer<MyApiController> _localizer;
+        private readonly IHttpContextAccessor _httpcontextaccessor;
 
         private readonly ApplicationUserManager<owin_userEntity> _userManager;
         public MyApiController(ApplicationUserManager<owin_userEntity> userManager
-            , IStringLocalizer<MyApiController> localizer)
+            , IStringLocalizer<MyApiController> localizer
+            , IHttpContextAccessor httpcontextaccessor)
         {
             _userManager = userManager;
             _localizer = localizer;
+            _httpcontextaccessor = httpcontextaccessor;
         }
 
         [HttpPost]
@@ -31,21 +35,10 @@ namespace JWTApiExample.Controllers
         [Route("apigetvalues")]
         public async Task<IActionResult> ApiGetValues()
         {
-            var user = await _userManager.FindByNameAsync("r@r.com");
-            if (user != null)
+            return Ok(new
             {
-                return Ok(new
-                {
-                    helloUse = "Hello World"
-                });
-            }
-            else
-            {
-                return Unauthorized(new
-                {
-                    helloUse = "Not Authorized to Get Values.."
-                });
-            }
+                helloUse = "Hello World"
+            }); 
         }
 
         [HttpPost]
@@ -53,7 +46,7 @@ namespace JWTApiExample.Controllers
         [Cached(600)]
         public async Task<IActionResult> ApiGetValuesWithParam([FromBody] owin_userEntity objuser)
         {
-
+            var v = _httpcontextaccessor;
             var user = await _userManager.FindByNameAsync(objuser.emailaddress);
             if (user != null)
             {
