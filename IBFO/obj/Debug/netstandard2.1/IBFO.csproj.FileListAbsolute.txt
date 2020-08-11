@@ -54,3 +54,17 @@ C:\Projects\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.csproj.Core
 C:\Projects\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.csproj.CopyComplete
 C:\Projects\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.dll
 C:\Projects\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.pdb
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\IBFO.deps.json
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\IBFO.dll
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\IBFO.pdb
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.csprojAssemblyReference.cache
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.AssemblyInfoInputs.cache
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.AssemblyInfo.cs
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.csproj.CoreCompileInputs.cache
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.csproj.CopyComplete
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.dll
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.pdb

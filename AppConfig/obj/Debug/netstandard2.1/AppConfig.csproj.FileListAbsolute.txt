@@ -54,3 +54,17 @@ C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.c
 C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CopyComplete
 C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.dll
 C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.pdb
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\AppConfig.deps.json
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\AppConfig.pdb
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.csprojAssemblyReference.cache
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.AssemblyInfoInputs.cache
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.AssemblyInfo.cs
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CoreCompileInputs.cache
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CopyComplete
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.pdb

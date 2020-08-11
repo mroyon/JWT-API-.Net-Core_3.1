@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AppConfig.HelperClasses;
 using BDO.Base;
+using BDO.DataAccessObjects.ExtendedEntities;
 using BDO.DataAccessObjects.SecurityModule;
 using JWTApiExample.CustomIdentityManagers;
 using Microsoft.AspNetCore.Authorization;
@@ -40,7 +41,6 @@ namespace JWTApiExample.Controllers
         public async Task<IActionResult> ApiLogin([FromBody] owin_userEntity model)
         {
             IActionResult response = Unauthorized();
-
 
             var validUser = await _userManager.CheckPasswordAsync(model, model.password);
             if (validUser == true)

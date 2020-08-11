@@ -27,9 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDAC", "..\IDAC\IDAC.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAC", "..\DAC\DAC.csproj", "{1D5CFB5F-D647-4E00-A7FB-A7A7758C5753}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTApiExample", "JWTApiExample\JWTApiExample.csproj", "{22FFCB00-0074-4A29-95BA-D5F86E8EE2BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JWTApiExample", "JWTApiExample\JWTApiExample.csproj", "{22FFCB00-0074-4A29-95BA-D5F86E8EE2BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiOutCache", "WebApiOutCache\WebApiOutCache.csproj", "{EE37ADF0-C074-4310-A434-17CE3604EFDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiOutCache", "WebApiOutCache\WebApiOutCache.csproj", "{EE37ADF0-C074-4310-A434-17CE3604EFDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -16,6 +16,7 @@ using AppConfig.HelperClasses;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Security.Cryptography;
+using BDO.DataAccessObjects.ExtendedEntities;
 
 namespace DAC.Core.DataAccessObjects.Security.ExtendedPartial
 {
@@ -134,7 +135,7 @@ namespace DAC.Core.DataAccessObjects.Security.ExtendedPartial
                 Database.AddInParameter(cmd, "@Ex_Decimal2", DbType.Decimal, owin_user.ex_decimal2);
             return owin_user;
         }
-
+        #endregion
         async Task<owin_userEntity> IKAFUserSecurityDataAccess.GetUserByParams(owin_userEntity owin_user, CancellationToken cancellationToken)
         {
             long returnValue = -99;
@@ -205,22 +206,16 @@ namespace DAC.Core.DataAccessObjects.Security.ExtendedPartial
                     }
                     cmd.Dispose();
                 }
-                #endregion
+                
                 if (itemList != null && itemList.Count > 0)
                 {
                     try
                     {
-                        EncryptionHelper obj = new EncryptionHelper();
-
-                        string[] strEncryptionValues = new string[4];
-                        strEncryptionValues = obj.GetDecryptedValuesDynamicVectorAuto(itemList[0].password, itemList[0].passwordsalt,
-                            itemList[0].passwordkey, itemList[0].passwordvector,
-                            PCryptography.HashAlgorithm.SHA256,
-                            PCryptography.KeySize.bit_256);
-                        string dePass = string.Empty;
-                        dePass = strEncryptionValues[3].ToString();
-
-                        if (owin_user.password == dePass && owin_user.username == itemList[0].username)
+                        EncryptionHelper objenc = new EncryptionHelper();
+                        
+                        string usersalt = itemList[0].passwordsalt;
+                        HashWithSaltResult ob2 = objenc.EncodePassword(owin_user.password, usersalt);
+                        if (itemList[0].password.Equals(ob2.Digest) && owin_user.username == itemList[0].username)
                         {
                             itemList[0].password = "blablablabla";
                             itemList[0].passwordquestion = "blablablabla";
