@@ -31,7 +31,7 @@ namespace JWTApiExample.Controllers
         }
 
         [HttpPost]
-        [Cached(600)]
+        [Cached(600, new[] { "*" })]
         [Route("apigetvalues")]
         public async Task<IActionResult> ApiGetValues()
         {
@@ -43,7 +43,7 @@ namespace JWTApiExample.Controllers
 
         [HttpPost]
         [Route("apigetvalueswithparam")]
-        [Cached(600)]
+        [Cached(600, new[] { "*" })]
         public async Task<IActionResult> ApiGetValuesWithParam([FromBody] owin_userEntity objuser)
         {
             var v = _httpcontextaccessor;

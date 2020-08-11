@@ -15,10 +15,12 @@ namespace WebApiOutCache.Cache
     public class CachedAttribute : Attribute, IAsyncActionFilter
     {
         private readonly int _timeToLiveSeconds;
+        private string[] _varyByQueryKeys;
 
-        public CachedAttribute(int timeToLiveSeconds)
+        public CachedAttribute(int timeToLiveSeconds, string[] varyByQueryKeys)
         {
             _timeToLiveSeconds = timeToLiveSeconds;
+            _varyByQueryKeys = varyByQueryKeys;
         }
 
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)

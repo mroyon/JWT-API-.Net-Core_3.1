@@ -22,6 +22,7 @@ namespace WebApiOutCache.Services
             }
 
             var serializedResponse = JsonConvert.SerializeObject(response);
+            
 
             await _distributedCache.SetStringAsync(cacheKey, serializedResponse, new DistributedCacheEntryOptions
             {
