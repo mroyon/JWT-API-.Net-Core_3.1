@@ -72,12 +72,11 @@ namespace JWTApiExample
             app.UseAuthorization();
             //app.UseSession();
             //Linux hosting as service
-
-
             app.UseForwardedHeaders(new ForwardedHeadersOptions
             {
                 ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
             });
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
