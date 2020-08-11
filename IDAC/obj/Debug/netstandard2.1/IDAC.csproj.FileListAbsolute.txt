@@ -1,0 +1,56 @@
+C:\Projects\Core\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\IDAC.deps.json
+C:\Projects\Core\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\IDAC.dll
+C:\Projects\Core\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\IDAC.pdb
+C:\Projects\Core\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\Core\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\Core\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.csprojAssemblyReference.cache
+C:\Projects\Core\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.AssemblyInfoInputs.cache
+C:\Projects\Core\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.AssemblyInfo.cs
+C:\Projects\Core\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.csproj.CoreCompileInputs.cache
+C:\Projects\Core\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.csproj.CopyComplete
+C:\Projects\Core\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.dll
+C:\Projects\Core\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.pdb
+C:\Projects\Core\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\Core\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\IDAC.deps.json
+C:\Projects\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\IDAC.dll
+C:\Projects\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\IDAC.pdb
+C:\Projects\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\IDAC\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.dll
+C:\Projects\KAFCoreProjects\IDAC\obj\Debug\netstandard2.1\IDAC.pdb
+C:\Projects\KAFCoreProjects\New folder\IDAC\bin\Debug\netstandard2.1\IDAC.deps.json
+C:\Projects\KAFCoreProjects\New folder\IDAC\bin\Debug\netstandard2.1\IDAC.dll
+C:\Projects\KAFCoreProjects\New folder\IDAC\bin\Debug\netstandard2.1\IDAC.pdb
+C:\Projects\KAFCoreProjects\New folder\IDAC\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\New folder\IDAC\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\New folder\IDAC\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\New folder\IDAC\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\New folder\IDAC\obj\Debug\netstandard2.1\IDAC.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\New folder\IDAC\obj\Debug\netstandard2.1\IDAC.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\New folder\IDAC\obj\Debug\netstandard2.1\IDAC.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\New folder\IDAC\obj\Debug\netstandard2.1\IDAC.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\New folder\IDAC\obj\Debug\netstandard2.1\IDAC.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\New folder\IDAC\obj\Debug\netstandard2.1\IDAC.dll
+C:\Projects\KAFCoreProjects\New folder\IDAC\obj\Debug\netstandard2.1\IDAC.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\IDAC.deps.json
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\IDAC.dll
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\IDAC.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.csprojAssemblyReference.cache
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.AssemblyInfoInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.AssemblyInfo.cs
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.csproj.CoreCompileInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.csproj.CopyComplete
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.dll
+C:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.pdb

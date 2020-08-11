@@ -1,0 +1,56 @@
+C:\Projects\Core\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\AppConfig.deps.json
+C:\Projects\Core\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\Core\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\AppConfig.pdb
+C:\Projects\Core\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\Core\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\Core\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.csprojAssemblyReference.cache
+C:\Projects\Core\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.AssemblyInfoInputs.cache
+C:\Projects\Core\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.AssemblyInfo.cs
+C:\Projects\Core\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CoreCompileInputs.cache
+C:\Projects\Core\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CopyComplete
+C:\Projects\Core\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\Core\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.pdb
+C:\Projects\Core\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\Core\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\AppConfig.deps.json
+C:\Projects\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\AppConfig.pdb
+C:\Projects\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\AppConfig\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\KAFCoreProjects\AppConfig\obj\Debug\netstandard2.1\AppConfig.pdb
+C:\Projects\KAFCoreProjects\New folder\AppConfig\bin\Debug\netstandard2.1\AppConfig.deps.json
+C:\Projects\KAFCoreProjects\New folder\AppConfig\bin\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\KAFCoreProjects\New folder\AppConfig\bin\Debug\netstandard2.1\AppConfig.pdb
+C:\Projects\KAFCoreProjects\New folder\AppConfig\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\New folder\AppConfig\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\New folder\AppConfig\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\New folder\AppConfig\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\New folder\AppConfig\obj\Debug\netstandard2.1\AppConfig.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\New folder\AppConfig\obj\Debug\netstandard2.1\AppConfig.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\New folder\AppConfig\obj\Debug\netstandard2.1\AppConfig.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\New folder\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\New folder\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\New folder\AppConfig\obj\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\KAFCoreProjects\New folder\AppConfig\obj\Debug\netstandard2.1\AppConfig.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\AppConfig.deps.json
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\AppConfig.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.csprojAssemblyReference.cache
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.AssemblyInfoInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.AssemblyInfo.cs
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CoreCompileInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CopyComplete
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.pdb

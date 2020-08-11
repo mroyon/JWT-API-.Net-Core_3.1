@@ -1,0 +1,9 @@
+C:\Projects\KAFCoreProjects\CLL\bin\Release\netstandard2.0\CLL.deps.json
+C:\Projects\KAFCoreProjects\CLL\bin\Release\netstandard2.0\CLL.dll
+C:\Projects\KAFCoreProjects\CLL\bin\Release\netstandard2.0\CLL.pdb
+C:\Projects\KAFCoreProjects\CLL\obj\Release\netstandard2.0\CLL.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\CLL\obj\Release\netstandard2.0\CLL.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\CLL\obj\Release\netstandard2.0\CLL.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\CLL\obj\Release\netstandard2.0\CLL.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\CLL\obj\Release\netstandard2.0\CLL.dll
+C:\Projects\KAFCoreProjects\CLL\obj\Release\netstandard2.0\CLL.pdb

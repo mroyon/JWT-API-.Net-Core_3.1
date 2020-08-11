@@ -1,0 +1,14 @@
+C:\Projects\KAFCoreProjects\IBFO\bin\Release\netstandard2.1\IBFO.deps.json
+C:\Projects\KAFCoreProjects\IBFO\bin\Release\netstandard2.1\IBFO.dll
+C:\Projects\KAFCoreProjects\IBFO\bin\Release\netstandard2.1\IBFO.pdb
+C:\Projects\KAFCoreProjects\IBFO\bin\Release\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\IBFO\bin\Release\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\IBFO\bin\Release\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\IBFO\bin\Release\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\IBFO\obj\Release\netstandard2.1\IBFO.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\IBFO\obj\Release\netstandard2.1\IBFO.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\IBFO\obj\Release\netstandard2.1\IBFO.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\IBFO\obj\Release\netstandard2.1\IBFO.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\IBFO\obj\Release\netstandard2.1\IBFO.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\IBFO\obj\Release\netstandard2.1\IBFO.dll
+C:\Projects\KAFCoreProjects\IBFO\obj\Release\netstandard2.1\IBFO.pdb

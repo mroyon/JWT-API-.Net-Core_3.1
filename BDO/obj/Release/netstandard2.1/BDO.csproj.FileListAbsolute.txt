@@ -1,0 +1,12 @@
+C:\Projects\KAFCoreProjects\BDO\bin\Release\netstandard2.1\BDO.deps.json
+C:\Projects\KAFCoreProjects\BDO\bin\Release\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\BDO\bin\Release\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\BDO\bin\Release\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\BDO\bin\Release\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\BDO\obj\Release\netstandard2.1\BDO.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\BDO\obj\Release\netstandard2.1\BDO.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\BDO\obj\Release\netstandard2.1\BDO.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\BDO\obj\Release\netstandard2.1\BDO.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\BDO\obj\Release\netstandard2.1\BDO.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\BDO\obj\Release\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\BDO\obj\Release\netstandard2.1\BDO.pdb

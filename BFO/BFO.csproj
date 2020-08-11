@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BDO\BDO.csproj" />
+    <ProjectReference Include="..\DAC\DAC.csproj" />
+    <ProjectReference Include="..\IBFO\IBFO.csproj" />
+    <ProjectReference Include="..\IDAC\IDAC.csproj" />
+  </ItemGroup>
+
+</Project>

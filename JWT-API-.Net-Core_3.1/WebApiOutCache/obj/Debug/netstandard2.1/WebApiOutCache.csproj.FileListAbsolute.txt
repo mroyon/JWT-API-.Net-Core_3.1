@@ -1,0 +1,9 @@
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\WebApiOutCache\bin\Debug\netstandard2.1\WebApiOutCache.deps.json
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\WebApiOutCache\bin\Debug\netstandard2.1\WebApiOutCache.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\WebApiOutCache\obj\Debug\netstandard2.1\WebApiOutCache.AssemblyInfoInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\WebApiOutCache\obj\Debug\netstandard2.1\WebApiOutCache.AssemblyInfo.cs
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\WebApiOutCache\bin\Debug\netstandard2.1\WebApiOutCache.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\WebApiOutCache\obj\Debug\netstandard2.1\WebApiOutCache.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\WebApiOutCache\obj\Debug\netstandard2.1\WebApiOutCache.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\WebApiOutCache\obj\Debug\netstandard2.1\WebApiOutCache.csproj.CoreCompileInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\WebApiOutCache\obj\Debug\netstandard2.1\WebApiOutCache.csprojAssemblyReference.cache

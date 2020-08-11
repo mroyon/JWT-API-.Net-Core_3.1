@@ -1,0 +1,96 @@
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BFC.deps.json
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BFC.dll
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BFC.pdb
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BFO.dll
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\DAC.Core.dll
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\IBFO.dll
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\IDAC.dll
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BFO.pdb
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\IBFO.pdb
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\AppConfig.pdb
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\DAC.Core.pdb
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\IDAC.pdb
+C:\Projects\Core\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.csprojAssemblyReference.cache
+C:\Projects\Core\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.AssemblyInfoInputs.cache
+C:\Projects\Core\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.AssemblyInfo.cs
+C:\Projects\Core\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.csproj.CoreCompileInputs.cache
+C:\Projects\Core\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.csproj.CopyComplete
+C:\Projects\Core\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.dll
+C:\Projects\Core\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.pdb
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\Core\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BFC.deps.json
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BFC.dll
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BFC.pdb
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BFO.dll
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\DAC.Core.dll
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\IBFO.dll
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\IDAC.dll
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BFO.pdb
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\IBFO.pdb
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\AppConfig.pdb
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\DAC.Core.pdb
+C:\Projects\KAFCoreProjects\BFC\bin\Debug\netstandard2.1\IDAC.pdb
+C:\Projects\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.dll
+C:\Projects\KAFCoreProjects\BFC\obj\Debug\netstandard2.1\BFC.pdb
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\BFC.deps.json
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\BFC.dll
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\BFC.pdb
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\BFO.dll
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\DAC.Core.dll
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\IBFO.dll
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\IDAC.dll
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\BFO.pdb
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\IBFO.pdb
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\AppConfig.pdb
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\DAC.Core.pdb
+C:\Projects\KAFCoreProjects\New folder\BFC\bin\Debug\netstandard2.1\IDAC.pdb
+C:\Projects\KAFCoreProjects\New folder\BFC\obj\Debug\netstandard2.1\BFC.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\New folder\BFC\obj\Debug\netstandard2.1\BFC.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\New folder\BFC\obj\Debug\netstandard2.1\BFC.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\New folder\BFC\obj\Debug\netstandard2.1\BFC.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\New folder\BFC\obj\Debug\netstandard2.1\BFC.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\New folder\BFC\obj\Debug\netstandard2.1\BFC.dll
+C:\Projects\KAFCoreProjects\New folder\BFC\obj\Debug\netstandard2.1\BFC.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\BFC.deps.json
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\BFC.dll
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\BFC.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\AppConfig.dll
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\BFO.dll
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\DAC.Core.dll
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\IBFO.dll
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\IDAC.dll
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\BFO.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\IBFO.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\AppConfig.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\DAC.Core.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\bin\Debug\netstandard2.1\IDAC.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\obj\Debug\netstandard2.1\BFC.csprojAssemblyReference.cache
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\obj\Debug\netstandard2.1\BFC.AssemblyInfoInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\obj\Debug\netstandard2.1\BFC.AssemblyInfo.cs
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\obj\Debug\netstandard2.1\BFC.csproj.CoreCompileInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\obj\Debug\netstandard2.1\BFC.csproj.CopyComplete
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\obj\Debug\netstandard2.1\BFC.dll
+C:\Projects\JWT-API-.Net-Core_3.1\BFC\obj\Debug\netstandard2.1\BFC.pdb

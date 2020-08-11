@@ -1,0 +1,36 @@
+C:\Projects\Core\KAFCoreProjects\CLL\bin\Debug\netstandard2.0\CLL.deps.json
+C:\Projects\Core\KAFCoreProjects\CLL\bin\Debug\netstandard2.0\CLL.dll
+C:\Projects\Core\KAFCoreProjects\CLL\bin\Debug\netstandard2.0\CLL.pdb
+C:\Projects\Core\KAFCoreProjects\CLL\obj\Debug\netstandard2.0\CLL.AssemblyInfoInputs.cache
+C:\Projects\Core\KAFCoreProjects\CLL\obj\Debug\netstandard2.0\CLL.AssemblyInfo.cs
+C:\Projects\Core\KAFCoreProjects\CLL\obj\Debug\netstandard2.0\CLL.csproj.CoreCompileInputs.cache
+C:\Projects\Core\KAFCoreProjects\CLL\obj\Debug\netstandard2.0\CLL.dll
+C:\Projects\Core\KAFCoreProjects\CLL\obj\Debug\netstandard2.0\CLL.pdb
+C:\Projects\Core\KAFCoreProjects\CLL\obj\Debug\netstandard2.0\CLL.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\CLL\bin\Debug\netstandard2.0\CLL.deps.json
+C:\Projects\KAFCoreProjects\CLL\bin\Debug\netstandard2.0\CLL.dll
+C:\Projects\KAFCoreProjects\CLL\bin\Debug\netstandard2.0\CLL.pdb
+C:\Projects\KAFCoreProjects\CLL\obj\Debug\netstandard2.0\CLL.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\CLL\obj\Debug\netstandard2.0\CLL.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\CLL\obj\Debug\netstandard2.0\CLL.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\CLL\obj\Debug\netstandard2.0\CLL.dll
+C:\Projects\KAFCoreProjects\CLL\obj\Debug\netstandard2.0\CLL.pdb
+C:\Projects\KAFCoreProjects\CLL\obj\Debug\netstandard2.0\CLL.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\New folder\CLL\bin\Debug\netstandard2.0\CLL.deps.json
+C:\Projects\KAFCoreProjects\New folder\CLL\bin\Debug\netstandard2.0\CLL.dll
+C:\Projects\KAFCoreProjects\New folder\CLL\bin\Debug\netstandard2.0\CLL.pdb
+C:\Projects\KAFCoreProjects\New folder\CLL\obj\Debug\netstandard2.0\CLL.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\New folder\CLL\obj\Debug\netstandard2.0\CLL.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\New folder\CLL\obj\Debug\netstandard2.0\CLL.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\New folder\CLL\obj\Debug\netstandard2.0\CLL.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\New folder\CLL\obj\Debug\netstandard2.0\CLL.dll
+C:\Projects\KAFCoreProjects\New folder\CLL\obj\Debug\netstandard2.0\CLL.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.deps.json
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.dll
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.AssemblyInfoInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.AssemblyInfo.cs
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.csproj.CoreCompileInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.dll
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.csprojAssemblyReference.cache

@@ -1,0 +1,14 @@
+C:\Projects\KAFCoreProjects\AppConfig\bin\Release\netstandard2.1\AppConfig.deps.json
+C:\Projects\KAFCoreProjects\AppConfig\bin\Release\netstandard2.1\AppConfig.dll
+C:\Projects\KAFCoreProjects\AppConfig\bin\Release\netstandard2.1\AppConfig.pdb
+C:\Projects\KAFCoreProjects\AppConfig\bin\Release\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\AppConfig\bin\Release\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\AppConfig\bin\Release\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\AppConfig\bin\Release\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\AppConfig\obj\Release\netstandard2.1\AppConfig.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\AppConfig\obj\Release\netstandard2.1\AppConfig.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\AppConfig\obj\Release\netstandard2.1\AppConfig.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\AppConfig\obj\Release\netstandard2.1\AppConfig.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\AppConfig\obj\Release\netstandard2.1\AppConfig.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\AppConfig\obj\Release\netstandard2.1\AppConfig.dll
+C:\Projects\KAFCoreProjects\AppConfig\obj\Release\netstandard2.1\AppConfig.pdb

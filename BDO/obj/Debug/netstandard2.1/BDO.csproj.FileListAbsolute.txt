@@ -1,0 +1,48 @@
+C:\Projects\Core\KAFCoreProjects\BDO\bin\Debug\netstandard2.1\BDO.deps.json
+C:\Projects\Core\KAFCoreProjects\BDO\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\Core\KAFCoreProjects\BDO\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\Core\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.csprojAssemblyReference.cache
+C:\Projects\Core\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.AssemblyInfoInputs.cache
+C:\Projects\Core\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.AssemblyInfo.cs
+C:\Projects\Core\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.csproj.CoreCompileInputs.cache
+C:\Projects\Core\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.dll
+C:\Projects\Core\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.pdb
+C:\Projects\Core\KAFCoreProjects\BDO\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\Core\KAFCoreProjects\BDO\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\Core\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\BDO\bin\Debug\netstandard2.1\BDO.deps.json
+C:\Projects\KAFCoreProjects\BDO\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\BDO\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\BDO\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\BDO\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\BDO\obj\Debug\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\New folder\BDO\bin\Debug\netstandard2.1\BDO.deps.json
+C:\Projects\KAFCoreProjects\New folder\BDO\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\New folder\BDO\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\New folder\BDO\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\New folder\BDO\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\New folder\BDO\obj\Debug\netstandard2.1\BDO.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\New folder\BDO\obj\Debug\netstandard2.1\BDO.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\New folder\BDO\obj\Debug\netstandard2.1\BDO.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\New folder\BDO\obj\Debug\netstandard2.1\BDO.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\New folder\BDO\obj\Debug\netstandard2.1\BDO.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\New folder\BDO\obj\Debug\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\New folder\BDO\obj\Debug\netstandard2.1\BDO.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\BDO\bin\Debug\netstandard2.1\BDO.deps.json
+C:\Projects\JWT-API-.Net-Core_3.1\BDO\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\JWT-API-.Net-Core_3.1\BDO\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\BDO\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\JWT-API-.Net-Core_3.1\BDO\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.csprojAssemblyReference.cache
+C:\Projects\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.AssemblyInfoInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.AssemblyInfo.cs
+C:\Projects\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.csproj.CoreCompileInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.csproj.CopyComplete
+C:\Projects\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.dll
+C:\Projects\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.pdb

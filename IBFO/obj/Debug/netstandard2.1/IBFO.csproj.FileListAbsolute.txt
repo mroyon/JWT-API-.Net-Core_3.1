@@ -1,0 +1,56 @@
+C:\Projects\Core\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\IBFO.deps.json
+C:\Projects\Core\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\IBFO.dll
+C:\Projects\Core\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\IBFO.pdb
+C:\Projects\Core\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\Core\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\Core\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.csprojAssemblyReference.cache
+C:\Projects\Core\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.AssemblyInfoInputs.cache
+C:\Projects\Core\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.AssemblyInfo.cs
+C:\Projects\Core\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.csproj.CoreCompileInputs.cache
+C:\Projects\Core\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.csproj.CopyComplete
+C:\Projects\Core\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.dll
+C:\Projects\Core\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.pdb
+C:\Projects\Core\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\Core\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\IBFO.deps.json
+C:\Projects\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\IBFO.dll
+C:\Projects\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\IBFO.pdb
+C:\Projects\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\IBFO\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.dll
+C:\Projects\KAFCoreProjects\IBFO\obj\Debug\netstandard2.1\IBFO.pdb
+C:\Projects\KAFCoreProjects\New folder\IBFO\bin\Debug\netstandard2.1\IBFO.deps.json
+C:\Projects\KAFCoreProjects\New folder\IBFO\bin\Debug\netstandard2.1\IBFO.dll
+C:\Projects\KAFCoreProjects\New folder\IBFO\bin\Debug\netstandard2.1\IBFO.pdb
+C:\Projects\KAFCoreProjects\New folder\IBFO\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\New folder\IBFO\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\New folder\IBFO\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\New folder\IBFO\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\New folder\IBFO\obj\Debug\netstandard2.1\IBFO.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\New folder\IBFO\obj\Debug\netstandard2.1\IBFO.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\New folder\IBFO\obj\Debug\netstandard2.1\IBFO.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\New folder\IBFO\obj\Debug\netstandard2.1\IBFO.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\New folder\IBFO\obj\Debug\netstandard2.1\IBFO.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\New folder\IBFO\obj\Debug\netstandard2.1\IBFO.dll
+C:\Projects\KAFCoreProjects\New folder\IBFO\obj\Debug\netstandard2.1\IBFO.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\IBFO.deps.json
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\IBFO.dll
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\IBFO.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\BDO.dll
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\CLL.dll
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\BDO.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\bin\Debug\netstandard2.1\CLL.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.csprojAssemblyReference.cache
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.AssemblyInfoInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.AssemblyInfo.cs
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.csproj.CoreCompileInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.csproj.CopyComplete
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.dll
+C:\Projects\JWT-API-.Net-Core_3.1\IBFO\obj\Debug\netstandard2.1\IBFO.pdb

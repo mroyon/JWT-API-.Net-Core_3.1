@@ -1,0 +1,14 @@
+C:\Projects\KAFCoreProjects\IDAC\bin\Release\netstandard2.1\IDAC.deps.json
+C:\Projects\KAFCoreProjects\IDAC\bin\Release\netstandard2.1\IDAC.dll
+C:\Projects\KAFCoreProjects\IDAC\bin\Release\netstandard2.1\IDAC.pdb
+C:\Projects\KAFCoreProjects\IDAC\bin\Release\netstandard2.1\BDO.dll
+C:\Projects\KAFCoreProjects\IDAC\bin\Release\netstandard2.1\CLL.dll
+C:\Projects\KAFCoreProjects\IDAC\bin\Release\netstandard2.1\BDO.pdb
+C:\Projects\KAFCoreProjects\IDAC\bin\Release\netstandard2.1\CLL.pdb
+C:\Projects\KAFCoreProjects\IDAC\obj\Release\netstandard2.1\IDAC.csprojAssemblyReference.cache
+C:\Projects\KAFCoreProjects\IDAC\obj\Release\netstandard2.1\IDAC.AssemblyInfoInputs.cache
+C:\Projects\KAFCoreProjects\IDAC\obj\Release\netstandard2.1\IDAC.AssemblyInfo.cs
+C:\Projects\KAFCoreProjects\IDAC\obj\Release\netstandard2.1\IDAC.csproj.CoreCompileInputs.cache
+C:\Projects\KAFCoreProjects\IDAC\obj\Release\netstandard2.1\IDAC.csproj.CopyComplete
+C:\Projects\KAFCoreProjects\IDAC\obj\Release\netstandard2.1\IDAC.dll
+C:\Projects\KAFCoreProjects\IDAC\obj\Release\netstandard2.1\IDAC.pdb
