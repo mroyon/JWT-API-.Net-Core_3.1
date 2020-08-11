@@ -1,4 +1,4 @@
-# Bearer Token based (JWT) Core 3.1 API authentication.
+# JWT Core 3.1 API authentication.
 Without Entity Framework(EF)
 
 
