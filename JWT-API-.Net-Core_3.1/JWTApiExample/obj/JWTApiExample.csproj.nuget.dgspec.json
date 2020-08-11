@@ -616,6 +616,10 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[9.1.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.1.6, )"
@@ -671,6 +675,10 @@
             "Serilog.Sinks.MongoDB": {
               "target": "Package",
               "version": "[4.0.0, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[5.1.2, )"
             },
             "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",

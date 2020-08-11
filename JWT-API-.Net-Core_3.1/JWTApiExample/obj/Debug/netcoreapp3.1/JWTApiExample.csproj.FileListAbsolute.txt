@@ -135,6 +135,13 @@ C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\WebApiOutCache.pdb
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Scrutor.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Filters.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\JWTApiExample.xml
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.csproj.CoreCompileInputs.cache
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.MvcApplicationPartsAssemblyInfo.cs
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.MvcApplicationPartsAssemblyInfo.cache

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using BDO.DataAccessObjects.SecurityModule;
+using FluentValidation.AspNetCore;
 using JWTApiExample.CustomIdentityManagers;
 using JWTApiExample.CustomStores;
 using JWTApiExample.Descripter;
@@ -32,6 +33,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using SwaggerOptions = WebApiOutCache.Models.SwaggerOptions;
 
 namespace JWTApiExample
 {
@@ -70,10 +72,13 @@ namespace JWTApiExample
                             .AllowAnyMethod();
                     });
             });
+
+
             services.AddMvc(options =>
             {
                 options.Conventions.Add(new AddAuthorizeFiltersControllerConvention());
             });
+
             services.AddIdentity<owin_userEntity, IdentityRole>(options => {
                 options.Password.RequireDigit = false;
                 options.Password.RequiredLength = 4;
@@ -154,8 +159,6 @@ namespace JWTApiExample
                })
                .AddNewtonsoftJson();
 
-
-            services.AddSwaggerGen();
             services.AddAutoMapper(typeof(Startup));
         }
 
@@ -173,6 +176,7 @@ namespace JWTApiExample
                 app.UseExceptionHandler("/Error");
             }
 
+           
 
             app.UseRouting();
             app.UseResponseCaching();
@@ -215,12 +219,14 @@ namespace JWTApiExample
                 endpoints.MapControllers();
                 endpoints.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
             app.UseSwagger();
 
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
+
         }
 
         private static void AddLocalizationConfigurations(IServiceCollection services)
