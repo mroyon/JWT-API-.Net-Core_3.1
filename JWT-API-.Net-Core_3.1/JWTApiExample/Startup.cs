@@ -1,3 +1,4 @@
+using AspNetCore.CacheOutput.Extensions;
 using AutoMapper;
 using JWTApiExample.Services;
 using Microsoft.AspNetCore.Builder;
@@ -7,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
-using SwaggerOptions = WebApiOutCache.Models.SwaggerOptions;
+using SwaggerOptions = BDO.DataAccessObjects.ExtendedEntities.SwaggerOptions;
 
 namespace JWTApiExample
 {
@@ -67,6 +68,7 @@ namespace JWTApiExample
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseCacheOutput();
             //app.UseSession();
             //Linux hosting as service
             app.UseForwardedHeaders(new ForwardedHeadersOptions

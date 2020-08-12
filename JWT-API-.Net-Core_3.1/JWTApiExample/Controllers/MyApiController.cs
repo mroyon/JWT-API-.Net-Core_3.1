@@ -8,8 +8,9 @@ using BDO.Base;
 using System;
 using AppConfig.HelperClasses;
 using Microsoft.AspNetCore.Http.Extensions;
-using WebApiOutCache.Cache;
 using Microsoft.AspNetCore.Http;
+using AspNetCore.CacheOutput;
+using JWTApiExample.Filters;
 
 namespace JWTApiExample.Controllers
 {
@@ -29,37 +30,68 @@ namespace JWTApiExample.Controllers
             _localizer = localizer;
             _httpcontextaccessor = httpcontextaccessor;
         }
-
-        [HttpPost]
-        [Cached(600, new[] { "*" })]
-        [Route("apigetvalues")]
-        public async Task<IActionResult> ApiGetValues()
+      
+        [HttpGet]
+        [Route("apigetvaluesgetwparam")]
+        [CacheOutputAttributeOver(
+           ClientTimeSpan = 0,
+           ServerTimeSpan = 3600,
+           MustRevalidate = true,
+           ExcludeQueryStringFromCacheKey = false
+       )]
+        public async Task<IActionResult> ApiGetValuesGetWParam()
         {
             return Ok(new
             {
-                helloUse = "Hello World"
-            }); 
+                helloUser = "Hello World - From GET Without PARAM"
+            });
+        }
+
+        [HttpGet]
+        [Route("apigetvaluesgetparam")]
+        [CacheOutputAttributeOver(
+           ClientTimeSpan = 0,
+           ServerTimeSpan = 3600,
+           MustRevalidate = true,
+           ExcludeQueryStringFromCacheKey = false
+       )]
+        public async Task<IActionResult> ApiGetValuesGetParam(string str)
+        {
+            return Ok(new
+            {
+                helloUser = "Hello World - From GET PARAM" + str
+            });
         }
 
         [HttpPost]
-        [Route("apigetvalueswithparam")]
-        [Cached(600, new[] { "*" })]
-        public async Task<IActionResult> ApiGetValuesWithParam([FromBody] owin_userEntity objuser)
+        [Route("apipostvalueswparam")]
+        public async Task<IActionResult> ApiPostValuesWParam()
         {
             var v = _httpcontextaccessor;
-            var user = await _userManager.FindByNameAsync(objuser.emailaddress);
-            if (user != null)
+                return Ok(new
+                {
+                    helloUser = "Hello World - From POST Without Param"
+                });
+        }
+
+        [HttpPost]
+        [Route("apigetvaluesparam")]       
+        public async Task<IActionResult> ApiPostValuesParam([FromBody]owin_userEntity objuser)
+        {
+            var v = _httpcontextaccessor;
+            //var user = await _userManager.FindByNameAsync(objuser.emailaddress);
+            if (objuser != null)
             {
                 return Ok(new
                 {
-                    helloUse = "Hello World" + user.emailaddress
+                    helloUser = "Hello World - From POST" + objuser.emailaddress
                 });
             }
             else
             {
                 return Unauthorized(new
                 {
-                    helloUse = "Not Authorized to Get Values.."
+                    helloUser = "Not Authorized to Get Values.."
                 });
             }
         }

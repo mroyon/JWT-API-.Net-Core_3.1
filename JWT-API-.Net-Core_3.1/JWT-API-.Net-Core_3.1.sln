@@ -29,8 +29,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAC", "..\DAC\DAC.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JWTApiExample", "JWTApiExample\JWTApiExample.csproj", "{22FFCB00-0074-4A29-95BA-D5F86E8EE2BB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiOutCache", "WebApiOutCache\WebApiOutCache.csproj", "{EE37ADF0-C074-4310-A434-17CE3604EFDC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,10 +71,6 @@ Global
 		{22FFCB00-0074-4A29-95BA-D5F86E8EE2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22FFCB00-0074-4A29-95BA-D5F86E8EE2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22FFCB00-0074-4A29-95BA-D5F86E8EE2BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE37ADF0-C074-4310-A434-17CE3604EFDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE37ADF0-C074-4310-A434-17CE3604EFDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE37ADF0-C074-4310-A434-17CE3604EFDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE37ADF0-C074-4310-A434-17CE3604EFDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,7 +85,6 @@ Global
 		{BDA50260-04C9-43BD-BA84-585A90BD599A} = {1D751942-82AC-4C85-95E5-199632AE7993}
 		{1D5CFB5F-D647-4E00-A7FB-A7A7758C5753} = {1D751942-82AC-4C85-95E5-199632AE7993}
 		{22FFCB00-0074-4A29-95BA-D5F86E8EE2BB} = {AB4D37EA-DB60-4DB4-813F-7211C62D3560}
-		{EE37ADF0-C074-4310-A434-17CE3604EFDC} = {ADE0C419-DAE0-4EF4-9F71-0ECE3C3DFA39}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {94BA19E4-5264-4524-94D5-240FE6CF6481}

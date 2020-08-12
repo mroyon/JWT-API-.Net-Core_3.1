@@ -128,11 +128,6 @@ C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
-C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.StackExchangeRedis.dll
-C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
-C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
-C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\WebApiOutCache.dll
-C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\WebApiOutCache.pdb
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Scrutor.dll
@@ -142,9 +137,6 @@ C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\FluentValidation.dll
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
-C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.csproj.CoreCompileInputs.cache
-C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.MvcApplicationPartsAssemblyInfo.cs
-C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -292,3 +284,12 @@ C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApi
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.pdb
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.genruntimeconfig.cache
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\AspNetCore.CacheOutput.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\AspNetCore.CacheOutput.Redis.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Jil.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Redis.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Sigil.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\StackExchange.Redis.StrongName.dll
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.csproj.CoreCompileInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.MvcApplicationPartsAssemblyInfo.cache

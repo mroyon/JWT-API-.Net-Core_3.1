@@ -1175,12 +1175,11 @@
       ]
     },
     "Microsoft.NETCore.Targets/1.1.0": {
-      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+      "sha512": "So1zZ52PBT5eTHxhyCS+7pirzVQzppy+fGwWCeNRhwAYFrngzh6oPCx1lwNJ/qwWpOLhdQ8sReFVFwBlYQ96bA==",
       "type": "package",
       "path": "microsoft.netcore.targets/1.1.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -1590,7 +1589,7 @@
       ]
     },
     "System.IO/4.3.0": {
-      "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
+      "sha512": "8kSQNUANyN1j75Eaxvapod2vVVgpQr5Sn6OTg3la0x3AXEGWhyUXk0qIaluM2GkmkextWOyGp6jbPP1tjXE4SA==",
       "type": "package",
       "path": "system.io/4.3.0",
       "files": [
@@ -1740,7 +1739,7 @@
       ]
     },
     "System.Reflection/4.3.0": {
-      "sha512": "KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
+      "sha512": "yAceayI0M+zb/+DHYHJzQnot827Fn5vbBQ8Uxuwl47EiJw56Ng9oUBxKdr4O5Mn9k9Fst8gtFl1m8nq5MZhECg==",
       "type": "package",
       "path": "system.reflection/4.3.0",
       "files": [
@@ -1820,12 +1819,11 @@
       ]
     },
     "System.Reflection.Emit/4.3.0": {
-      "sha512": "228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
+      "sha512": "NatduiF4AF6u4xrGq7COf44NAtD3at4u+g9B90U0h8Pw7WbPldSn2aEtxyoFziiCCgWnhL4LaAr/5azA3swsPQ==",
       "type": "package",
       "path": "system.reflection.emit/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -1856,12 +1854,11 @@
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
-      "sha512": "59tBslAk9733NXLrUJrwNZEzbMAcu8k344OYo+wfSVygcgZ9lgBdGIzH/nrg3LYhXceynyvTc8t5/GD4Ri0/ng==",
+      "sha512": "eyARhpcwcDqruleQyxhRdqvMySycdYNTSnRXzYyB2Aq8scFauw7e1ElTYrbh1SKBa9xQeExqWF//nOIWUounQw==",
       "type": "package",
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -1901,7 +1898,7 @@
       ]
     },
     "System.Reflection.Primitives/4.3.0": {
-      "sha512": "5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
+      "sha512": "Iml8vcfwaVdKPBiC7DrRNi0muYbEyM90eVYxhrQG2OqfgbikL2XcHwoOCECgn5ys4dkcpYK9mN7Uhl6YTE7wVA==",
       "type": "package",
       "path": "system.reflection.primitives/4.3.0",
       "files": [
@@ -1957,7 +1954,7 @@
       ]
     },
     "System.Runtime/4.3.0": {
-      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "sha512": "hIWyYwH1odtEYvF+p221Zobvje9UQedbOUoLnL8YFoI6xVvKdeHfgR/jx+fsSLuFugN6QI3+ceoGMNB3ygbmDg==",
       "type": "package",
       "path": "system.runtime/4.3.0",
       "files": [
@@ -2250,7 +2247,7 @@
       ]
     },
     "System.Text.Encoding/4.3.0": {
-      "sha512": "BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
+      "sha512": "tBWGZRvd3Q+0fHT1rCa5aaEXTlYPKPLrOApwFK/SZ6uf8wXCxa08qfWD17s6IAfvMZtbUdQSgLzUClWcJC7zsA==",
       "type": "package",
       "path": "system.text.encoding/4.3.0",
       "files": [
@@ -2403,7 +2400,7 @@
       ]
     },
     "System.Threading.Tasks/4.3.0": {
-      "sha512": "LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
+      "sha512": "RiHqQ/OXxVzEgf+2Qni0wIGMx5UPvvalhacBUFb2xXuN1DSTZ5u46EeDP99ANcjaI0acb882X2erf4dndu6kPg==",
       "type": "package",
       "path": "system.threading.tasks/4.3.0",
       "files": [
@@ -2572,25 +2569,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\royon\\.nuget\\packages\\": {},
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj",
+      "projectUniqueName": "C:\\Projects\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj",
       "projectName": "DAC.Core",
-      "projectPath": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj",
-      "packagesPath": "C:\\Users\\royon\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\DAC\\obj\\",
+      "projectPath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\DAC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\royon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2604,14 +2601,14 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj": {
-              "projectPath": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj"
+            "C:\\Projects\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj": {
+              "projectPath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj"
             },
-            "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
-              "projectPath": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
+            "C:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
+              "projectPath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
             },
-            "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj": {
-              "projectPath": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj"
+            "C:\\Projects\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj": {
+              "projectPath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj"
             }
           }
         }
@@ -2649,7 +2646,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,4 +1,5 @@
-﻿using BDO.DataAccessObjects.SecurityModule;
+﻿using BDO.DataAccessObjects.ExtendedEntities;
+using BDO.DataAccessObjects.SecurityModule;
 using FluentValidation.AspNetCore;
 using JWTApiExample.CustomIdentityManagers;
 using JWTApiExample.CustomStores;
@@ -22,7 +23,6 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using WebApiOutCache.Models;
 
 namespace JWTApiExample.Services
 {
