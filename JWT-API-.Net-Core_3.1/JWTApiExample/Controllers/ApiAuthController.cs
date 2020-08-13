@@ -10,11 +10,13 @@ using BDO.Base;
 using BDO.DataAccessObjects.ExtendedEntities;
 using BDO.DataAccessObjects.SecurityModule;
 using JWTApiExample.CustomIdentityManagers;
+using JWTApiExample.Providers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
 namespace JWTApiExample.Controllers
@@ -25,17 +27,37 @@ namespace JWTApiExample.Controllers
     {
         private readonly ApplicationUserManager<owin_userEntity> _userManager;
         private readonly IHttpContextAccessor _contextAccessor;
-        private readonly SecurityCapsule _sec;
+        private readonly JwtSettings _jwtSettings;
+        private readonly JWTSigningConfigurations _jwtSigningConfigurations;
         public IConfiguration _configuration { get; }
 
-
-        public ApiAuthController(ApplicationUserManager<owin_userEntity> userManager, IConfiguration configuration, IHttpContextAccessor contextAccessor)
+        /// <summary>
+        /// Constructor with properties
+        /// </summary>
+        /// <param name="userManager"></param>
+        /// <param name="configuration"></param>
+        /// <param name="contextAccessor"></param>
+        /// <param name="jwtSettings"></param>
+        /// <param name="jwtSigningConfigurations"></param>
+        public ApiAuthController(
+            ApplicationUserManager<owin_userEntity> userManager, 
+            IConfiguration configuration, 
+            IHttpContextAccessor contextAccessor,
+            IOptions<JwtSettings> jwtSettings ,
+            JWTSigningConfigurations jwtSigningConfigurations)
         {
             _userManager = userManager;
             _configuration = configuration;
             _contextAccessor = contextAccessor;
+            _jwtSettings = jwtSettings.Value;
+            _jwtSigningConfigurations = jwtSigningConfigurations;
         }
 
+        /// <summary>
+        /// JWT API Login
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("apilogin")]
         public async Task<IActionResult> ApiLogin([FromBody] owin_userEntity model)
@@ -50,15 +72,15 @@ namespace JWTApiExample.Controllers
                     new Claim(JwtRegisteredClaimNames.Sub, model.username),
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
                 };
-
-                var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]));
+                var accessTokenExpiration = DateTime.UtcNow.AddMinutes(_jwtSettings.AccessTokenExpiration);
 
                 var token = new JwtSecurityToken(
-                    issuer: _configuration["Jwt:Issuer"],
-                    audience: _configuration["Jwt:Audience"],
-                    expires: DateTime.Now.AddHours(3),
+                    issuer: _jwtSettings.Issuer,
+                    audience: _jwtSettings.Audience,
+                    expires: accessTokenExpiration,
                     claims: authClaims,
-                    signingCredentials: new Microsoft.IdentityModel.Tokens.SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256)
+                    notBefore: DateTime.UtcNow,
+                    signingCredentials: _jwtSigningConfigurations.SigningCredentials
                     );
 
                 return Ok(new
@@ -69,6 +91,7 @@ namespace JWTApiExample.Controllers
             }
             return Unauthorized();
         }
+
 
     }
 }

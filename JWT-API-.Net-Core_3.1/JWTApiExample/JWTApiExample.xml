@@ -4,6 +4,23 @@
         <name>JWTApiExample</name>
     </assembly>
     <members>
+        <member name="M:JWTApiExample.Controllers.ApiAuthController.#ctor(JWTApiExample.CustomIdentityManagers.ApplicationUserManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Options.IOptions{BDO.DataAccessObjects.ExtendedEntities.JwtSettings},JWTApiExample.Providers.JWTSigningConfigurations)">
+            <summary>
+            Constructor with properties
+            </summary>
+            <param name="userManager"></param>
+            <param name="configuration"></param>
+            <param name="contextAccessor"></param>
+            <param name="jwtSettings"></param>
+            <param name="jwtSigningConfigurations"></param>
+        </member>
+        <member name="M:JWTApiExample.Controllers.ApiAuthController.ApiLogin(BDO.DataAccessObjects.SecurityModule.owin_userEntity)">
+            <summary>
+            JWT API Login
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
         <member name="M:JWTApiExample.Descripter.CusIdentityErrorDescriber.DefaultError">
             <summary>
             Returns the default <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/>.

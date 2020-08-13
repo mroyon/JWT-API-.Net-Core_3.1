@@ -74,10 +74,10 @@ namespace JWTApiExample.Services
 
 
 
-            var jwtSettings = new JwtSettings();
-            configuration.Bind(nameof(jwtSettings), jwtSettings);
-            services.AddSingleton(jwtSettings);
-
+            services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
+            var JwtSettings = configuration.GetSection("JwtSettings").Get<JwtSettings>();
+            var signingConfigurations = new JWTSigningConfigurations(JwtSettings.Secret);
+            services.AddSingleton(signingConfigurations);
 
             services
                 .AddMvc(options =>
@@ -95,36 +95,39 @@ namespace JWTApiExample.Services
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
             })
-                             .AddJwtBearer(options =>
-                             {
-                                 options.SaveToken = true;
-                                 options.RequireHttpsMetadata = false;
-                                 options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
-                                 {
-                                     ValidateIssuer = true,
-                                     ValidateAudience = true,
-                                     ValidAudience = configuration["Jwt:Issuer"],
-                                     ValidIssuer = configuration["Jwt:Audience"],
-                                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:SecretKey"]))
-                                 };
-                                 options.Events = new JwtBearerEvents
-                                 {
-                                     OnMessageReceived = context =>
-                                     {
-                                         var accessToken = context.Request.Query["access_token"];
+                .AddJwtBearer(options =>
+                {
+                    options.SaveToken = true;
+                    options.RequireHttpsMetadata = false;
+                    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+                    {
+                        ValidateAudience = true,
+                        ValidateIssuer = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidateLifetime = true,
+                        ValidIssuer = JwtSettings.Issuer,
+                        ValidAudience = JwtSettings.Audience,
+                        IssuerSigningKey = signingConfigurations.SecurityKey,
+                        ClockSkew = TimeSpan.Zero
+                    };
+                    options.Events = new JwtBearerEvents
+                    {
+                        OnMessageReceived = context =>
+                        {
+                            var accessToken = context.Request.Query["access_token"];
 
-                             // If the request is for our hub...
-                             var path = context.HttpContext.Request.Path;
-                                         if (!string.IsNullOrEmpty(accessToken) &&
-                                             (path.StartsWithSegments("/hubs/chat")))
-                                         {
-                                 // Read the token out of the query string
-                                 context.Token = accessToken;
-                                         }
-                                         return Task.CompletedTask;
-                                     }
-                                 };
-                             });
+                // If the request is for our hub...
+                var path = context.HttpContext.Request.Path;
+                            if (!string.IsNullOrEmpty(accessToken) &&
+                                (path.StartsWithSegments("/hubs/chat")))
+                            {
+                    // Read the token out of the query string
+                    context.Token = accessToken;
+                            }
+                            return Task.CompletedTask;
+                        }
+                    };
+                });
 
 
 
