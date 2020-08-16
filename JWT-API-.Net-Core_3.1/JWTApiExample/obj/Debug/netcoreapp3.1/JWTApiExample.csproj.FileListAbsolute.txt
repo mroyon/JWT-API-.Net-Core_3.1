@@ -171,7 +171,6 @@ C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApi
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.StackExchangeRedis.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
@@ -203,7 +202,6 @@ C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApi
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\NWebsec.AspNetCore.Core.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\NWebsec.AspNetCore.Middleware.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Oracle.ManagedDataAccess.dll
-C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Scrutor.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Serilog.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll
@@ -219,7 +217,6 @@ C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApi
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Serilog.Sinks.MongoDB.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Serilog.Sinks.PeriodicBatching.dll
-C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Filters.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
@@ -256,14 +253,12 @@ C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApi
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\DAC.Core.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\IBFO.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\IDAC.dll
-C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\WebApiOutCache.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\BDO.pdb
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\BFC.pdb
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\BFO.pdb
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\CLL.pdb
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\IBFO.pdb
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\IDAC.pdb
-C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\WebApiOutCache.pdb
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\AppConfig.pdb
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\DAC.Core.pdb
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.csprojAssemblyReference.cache
@@ -293,3 +288,9 @@ C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.csproj.CoreCompileInputs.cache
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.MvcApplicationPartsAssemblyInfo.cs
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\obj\Debug\netcoreapp3.1\JWTApiExample.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\AspNetCore.CacheOutput.dll
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\AspNetCore.CacheOutput.Redis.dll
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Jil.dll
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Redis.dll
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\Sigil.dll
+C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\JWTApiExample\bin\Debug\netcoreapp3.1\StackExchange.Redis.StrongName.dll

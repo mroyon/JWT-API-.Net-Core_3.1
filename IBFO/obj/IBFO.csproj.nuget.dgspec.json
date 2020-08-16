@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj": {}
+    "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
+    "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj",
+        "projectUniqueName": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj",
         "projectName": "BDO",
-        "projectPath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\obj\\",
+        "projectPath": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj",
+        "packagesPath": "C:\\Users\\royon\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\BDO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\royon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {
-                "projectPath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj"
+              "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {
+                "projectPath": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj"
               }
             }
           }
@@ -71,25 +71,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {
+    "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
+        "projectUniqueName": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
         "projectName": "CLL",
-        "projectPath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\obj\\",
+        "projectPath": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
+        "packagesPath": "C:\\Users\\royon\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\CLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\royon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -131,25 +131,25 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj": {
+    "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj",
+        "projectUniqueName": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj",
         "projectName": "IBFO",
-        "projectPath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\obj\\",
+        "projectPath": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj",
+        "packagesPath": "C:\\Users\\royon\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\IBFO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\royon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -163,8 +163,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
-                "projectPath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
+              "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
+                "projectPath": "C:\\Projects\\Core\\Project_2020\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
               }
             }
           }
@@ -198,7 +198,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

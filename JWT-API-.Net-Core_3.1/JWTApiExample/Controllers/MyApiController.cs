@@ -22,6 +22,12 @@ namespace JWTApiExample.Controllers
         private readonly IHttpContextAccessor _httpcontextaccessor;
 
         private readonly ApplicationUserManager<owin_userEntity> _userManager;
+        /// <summary>
+        /// MyApiController
+        /// </summary>
+        /// <param name="userManager"></param>
+        /// <param name="localizer"></param>
+        /// <param name="httpcontextaccessor"></param>
         public MyApiController(ApplicationUserManager<owin_userEntity> userManager
             , IStringLocalizer<MyApiController> localizer
             , IHttpContextAccessor httpcontextaccessor)
@@ -30,7 +36,11 @@ namespace JWTApiExample.Controllers
             _localizer = localizer;
             _httpcontextaccessor = httpcontextaccessor;
         }
-      
+
+        /// <summary>
+        /// ApiGetValuesGetWParam
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("apigetvaluesgetwparam")]
         [CacheOutputAttributeOver(
@@ -47,6 +57,11 @@ namespace JWTApiExample.Controllers
             });
         }
 
+        /// <summary>
+        /// ApiGetValuesGetParam
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
         [HttpGet]
         [Route("apigetvaluesgetparam")]
         [CacheOutputAttributeOver(
@@ -63,6 +78,10 @@ namespace JWTApiExample.Controllers
             });
         }
 
+        /// <summary>
+        /// ApiPostValuesWParam
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("apipostvalueswparam")]
         public async Task<IActionResult> ApiPostValuesWParam()
@@ -74,6 +93,11 @@ namespace JWTApiExample.Controllers
                 });
         }
 
+        /// <summary>
+        /// ApiPostValuesParam
+        /// </summary>
+        /// <param name="objuser"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("apigetvaluesparam")]       
         public async Task<IActionResult> ApiPostValuesParam([FromBody]owin_userEntity objuser)
