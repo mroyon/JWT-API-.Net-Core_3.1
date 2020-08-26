@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CoreWebApp</name>
+    </assembly>
+    <members>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.DefaultError">
+            <summary>
+            Returns the default <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/>.
+            </summary>
+            <returns>The default <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/>.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.ConcurrencyFailure">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a concurrency failure.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a concurrency failure.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.PasswordMismatch">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password mismatch.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password mismatch.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.InvalidToken">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating an invalid token.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating an invalid token.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.RecoveryCodeRedemptionFailed">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a recovery code was not redeemed.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a recovery code was not redeemed.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.LoginAlreadyAssociated">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating an external login is already associated with an account.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating an external login is already associated with an account.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.InvalidUserName(System.String)">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating the specified user <paramref name="userName"/> is invalid.
+            </summary>
+            <param name="userName">The user name that is invalid.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating the specified user <paramref name="userName"/> is invalid.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.InvalidEmail(System.String)">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating the specified <paramref name="email"/> is invalid.
+            </summary>
+            <param name="email">The email that is invalid.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating the specified <paramref name="email"/> is invalid.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.DuplicateUserName(System.String)">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating the specified <paramref name="userName"/> already exists.
+            </summary>
+            <param name="userName">The user name that already exists.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating the specified <paramref name="userName"/> already exists.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.DuplicateEmail(System.String)">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating the specified <paramref name="email"/> is already associated with an account.
+            </summary>
+            <param name="email">The email that is already associated with an account.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating the specified <paramref name="email"/> is already associated with an account.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.InvalidRoleName(System.String)">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating the specified <paramref name="role"/> name is invalid.
+            </summary>
+            <param name="role">The invalid role.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating the specific role <paramref name="role"/> name is invalid.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.DuplicateRoleName(System.String)">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating the specified <paramref name="role"/> name already exists.
+            </summary>
+            <param name="role">The duplicate role.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating the specific role <paramref name="role"/> name already exists.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.UserAlreadyHasPassword">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a user already has a password.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a user already has a password.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.UserLockoutNotEnabled">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating user lockout is not enabled.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating user lockout is not enabled.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.UserAlreadyInRole(System.String)">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a user is already in the specified <paramref name="role"/>.
+            </summary>
+            <param name="role">The duplicate role.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a user is already in the specified <paramref name="role"/>.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.UserNotInRole(System.String)">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a user is not in the specified <paramref name="role"/>.
+            </summary>
+            <param name="role">The duplicate role.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a user is not in the specified <paramref name="role"/>.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.PasswordTooShort(System.Int32)">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password of the specified <paramref name="length"/> does not meet the minimum length requirements.
+            </summary>
+            <param name="length">The length that is not long enough.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password of the specified <paramref name="length"/> does not meet the minimum length requirements.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.PasswordRequiresUniqueChars(System.Int32)">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password does not meet the minimum number <paramref name="uniqueChars"/> of unique chars.
+            </summary>
+            <param name="uniqueChars">The number of different chars that must be used.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password does not meet the minimum number <paramref name="uniqueChars"/> of unique chars.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.PasswordRequiresNonAlphanumeric">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password entered does not contain a non-alphanumeric character, which is required by the password policy.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password entered does not contain a non-alphanumeric character.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.PasswordRequiresDigit">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password entered does not contain a numeric character, which is required by the password policy.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password entered does not contain a numeric character.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.PasswordRequiresLower">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password entered does not contain a lower case letter, which is required by the password policy.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password entered does not contain a lower case letter.</returns>
+        </member>
+        <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.PasswordRequiresUpper">
+            <summary>
+            Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password entered does not contain an upper case letter, which is required by the password policy.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password entered does not contain an upper case letter.</returns>
+        </member>
+        <member name="M:CoreWebApp.Providers.LocalizationQueryProvider.DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

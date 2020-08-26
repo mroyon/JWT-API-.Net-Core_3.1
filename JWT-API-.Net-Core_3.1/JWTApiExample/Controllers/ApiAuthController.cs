@@ -1,23 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
-using AppConfig.HelperClasses;
-using BDO.Base;
 using BDO.DataAccessObjects.ExtendedEntities;
 using BDO.DataAccessObjects.SecurityModule;
 using JWTApiExample.CustomIdentityManagers;
 using JWTApiExample.Providers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
 
 namespace JWTApiExample.Controllers
 {
@@ -29,6 +23,9 @@ namespace JWTApiExample.Controllers
         private readonly IHttpContextAccessor _contextAccessor;
         private readonly JwtSettings _jwtSettings;
         private readonly JWTSigningConfigurations _jwtSigningConfigurations;
+
+        private readonly ILogger<ApiAuthController> _logger;
+
         public IConfiguration _configuration { get; }
 
         /// <summary>
@@ -44,13 +41,15 @@ namespace JWTApiExample.Controllers
             IConfiguration configuration, 
             IHttpContextAccessor contextAccessor,
             IOptions<JwtSettings> jwtSettings ,
-            JWTSigningConfigurations jwtSigningConfigurations)
+            JWTSigningConfigurations jwtSigningConfigurations,
+           ILogger<ApiAuthController> logger)
         {
             _userManager = userManager;
             _configuration = configuration;
             _contextAccessor = contextAccessor;
             _jwtSettings = jwtSettings.Value;
             _jwtSigningConfigurations = jwtSigningConfigurations;
+            _logger = logger;
         }
 
         /// <summary>
@@ -82,6 +81,8 @@ namespace JWTApiExample.Controllers
                     notBefore: DateTime.UtcNow,
                     signingCredentials: _jwtSigningConfigurations.SigningCredentials
                     );
+                
+                _logger.LogInformation("user authenticated successfully., {Name}!", System.Text.Json.JsonSerializer.Serialize(model));
 
                 return Ok(new
                 {

@@ -4,7 +4,7 @@
         <name>JWTApiExample</name>
     </assembly>
     <members>
-        <member name="M:JWTApiExample.Controllers.ApiAuthController.#ctor(JWTApiExample.CustomIdentityManagers.ApplicationUserManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Options.IOptions{BDO.DataAccessObjects.ExtendedEntities.JwtSettings},JWTApiExample.Providers.JWTSigningConfigurations)">
+        <member name="M:JWTApiExample.Controllers.ApiAuthController.#ctor(JWTApiExample.CustomIdentityManagers.ApplicationUserManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Options.IOptions{BDO.DataAccessObjects.ExtendedEntities.JwtSettings},JWTApiExample.Providers.JWTSigningConfigurations,Microsoft.Extensions.Logging.ILogger{JWTApiExample.Controllers.ApiAuthController})">
             <summary>
             Constructor with properties
             </summary>
@@ -19,6 +19,40 @@
             JWT API Login
             </summary>
             <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:JWTApiExample.Controllers.MyApiController.#ctor(JWTApiExample.CustomIdentityManagers.ApplicationUserManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},Microsoft.Extensions.Localization.IStringLocalizer{JWTApiExample.Controllers.MyApiController},Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            MyApiController
+            </summary>
+            <param name="userManager"></param>
+            <param name="localizer"></param>
+            <param name="httpcontextaccessor"></param>
+        </member>
+        <member name="M:JWTApiExample.Controllers.MyApiController.ApiGetValuesGetWParam">
+            <summary>
+            ApiGetValuesGetWParam
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:JWTApiExample.Controllers.MyApiController.ApiGetValuesGetParam(System.String)">
+            <summary>
+            ApiGetValuesGetParam
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:JWTApiExample.Controllers.MyApiController.ApiPostValuesWParam">
+            <summary>
+            ApiPostValuesWParam
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:JWTApiExample.Controllers.MyApiController.ApiPostValuesParam(BDO.DataAccessObjects.SecurityModule.owin_userEntity)">
+            <summary>
+            ApiPostValuesParam
+            </summary>
+            <param name="objuser"></param>
             <returns></returns>
         </member>
         <member name="M:JWTApiExample.Descripter.CusIdentityErrorDescriber.DefaultError">

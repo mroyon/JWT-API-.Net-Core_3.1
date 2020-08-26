@@ -597,5 +597,14 @@ namespace BDO.DataAccessObjects.SecurityModule
         public string ClientName { get; set; }
         public string SignOutIframeUrl { get; set; }
 
+
+        public virtual DateTimeOffset? LockoutEnd { get; set; }
+        [PersonalData]
+        public virtual bool TwoFactorEnabled { get; set; }
+        [PersonalData]
+        public virtual bool PhoneNumberConfirmed { get; set; }
+        public virtual string SecurityStamp { get; set; }
+        public virtual string PasswordHash { get; set; }
+
     }
 }

@@ -4,7 +4,7 @@
         <name>JWTApiExample</name>
     </assembly>
     <members>
-        <member name="M:JWTApiExample.Controllers.ApiAuthController.#ctor(JWTApiExample.CustomIdentityManagers.ApplicationUserManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Options.IOptions{BDO.DataAccessObjects.ExtendedEntities.JwtSettings},JWTApiExample.Providers.JWTSigningConfigurations)">
+        <member name="M:JWTApiExample.Controllers.ApiAuthController.#ctor(JWTApiExample.CustomIdentityManagers.ApplicationUserManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Options.IOptions{BDO.DataAccessObjects.ExtendedEntities.JwtSettings},JWTApiExample.Providers.JWTSigningConfigurations,Microsoft.Extensions.Logging.ILogger{JWTApiExample.Controllers.ApiAuthController})">
             <summary>
             Constructor with properties
             </summary>

@@ -4,13 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using BDO.DataAccessObjects.SecurityModule;
 using JWTApiExample.CustomIdentityManagers;
 using Microsoft.Extensions.Localization;
-using BDO.Base;
-using System;
-using AppConfig.HelperClasses;
-using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Http;
-using AspNetCore.CacheOutput;
 using JWTApiExample.Filters;
+using Serilog;
 
 namespace JWTApiExample.Controllers
 {
@@ -106,6 +102,7 @@ namespace JWTApiExample.Controllers
             //var user = await _userManager.FindByNameAsync(objuser.emailaddress);
             if (objuser != null)
             {
+                Log.Debug("Processing item {ItemNumber} of {ItemCount}");
                 return Ok(new
                 {
                     helloUser = "Hello World - From POST" + objuser.emailaddress
