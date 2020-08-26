@@ -1885,3 +1885,5 @@ C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\net
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.pdb
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.genruntimeconfig.cache
 C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\LoggedOut.cshtml.g.cs
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\ForgotPassword.cshtml.g.cs
+C:\Projects\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\ForgotPasswordConfirmation.cshtml.g.cs

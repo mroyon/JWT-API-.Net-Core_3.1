@@ -66,7 +66,66 @@ namespace DAC.Core.CoreFactory
         #region Extended
         #region IKAFUserSecurityDataAccess
         public abstract IKAFUserSecurityDataAccess CreateKAFUserSecurityDataAccess();
-        #endregion IKAFUserSecurityDataAccess
-        #endregion
-    }
+		#endregion IKAFUserSecurityDataAccess
+		#endregion
+
+		#region Factory Methods 
+
+		#region owin_lastworkingpage
+		public abstract Iowin_lastworkingpageDataAccessObjects Createowin_lastworkingpageDataAccess();
+		#endregion owin_lastworkingpage
+
+
+		#region owin_role
+		public abstract Iowin_roleDataAccessObjects Createowin_roleDataAccess();
+		#endregion owin_role
+
+
+		#region owin_rolepermission
+		public abstract Iowin_rolepermissionDataAccessObjects Createowin_rolepermissionDataAccess();
+		#endregion owin_rolepermission
+
+
+		#region owin_user
+		public abstract Iowin_userDataAccessObjects Createowin_userDataAccess();
+		#endregion owin_user
+
+
+		#region owin_userclaims
+		public abstract Iowin_userclaimsDataAccessObjects Createowin_userclaimsDataAccess();
+		#endregion owin_userclaims
+
+
+		#region owin_userlogintrail
+		public abstract Iowin_userlogintrailDataAccessObjects Createowin_userlogintrailDataAccess();
+		#endregion owin_userlogintrail
+
+
+		#region owin_userpasswordresetinfo
+		public abstract Iowin_userpasswordresetinfoDataAccessObjects Createowin_userpasswordresetinfoDataAccess();
+		#endregion owin_userpasswordresetinfo
+
+
+		#region owin_userprefferencessettings
+		public abstract Iowin_userprefferencessettingsDataAccessObjects Createowin_userprefferencessettingsDataAccess();
+		#endregion owin_userprefferencessettings
+
+
+		#region owin_userrole
+		public abstract Iowin_userroleDataAccessObjects Createowin_userroleDataAccess();
+		#endregion owin_userrole
+
+
+		#region owin_userroles
+		public abstract Iowin_userrolesDataAccessObjects Createowin_userrolesDataAccess();
+		#endregion owin_userroles
+
+
+		#region owin_userstatuschangehistory
+		public abstract Iowin_userstatuschangehistoryDataAccessObjects Createowin_userstatuschangehistoryDataAccess();
+		#endregion owin_userstatuschangehistory
+
+
+		#endregion
+	}
 }

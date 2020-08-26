@@ -172,6 +172,70 @@ namespace CoreWebApp.Controllers
             return View("LoggedOut", vm);
         }
 
+        /// <summary>
+        /// ForgotPassword GET
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        /// <summary>
+        /// ForgotPassword
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ForgotPassword(owin_userEntity model)
+        {
+            ModelState.Remove("passwordquestion");
+            ModelState.Remove("passwordkey");
+            ModelState.Remove("passwordvector");
+            ModelState.Remove("locked");
+            ModelState.Remove("approved");
+            ModelState.Remove("loweredusername");
+            ModelState.Remove("applicationid");
+            ModelState.Remove("masteruserid");
+            ModelState.Remove("username");
+            ModelState.Remove("password");
+            ModelState.Remove("isanonymous");
+            ModelState.Remove("masprivatekey");
+            ModelState.Remove("maspublickey");
+            ModelState.Remove("confirmpassword");
+            ModelState.Remove("passwordsalt");
+
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByNameAsync(model.emailaddress);
+                // TODO add this is all users need to be validated
+                // if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
+                if (user == null)
+                {
+                    // Don't reveal that the user does not exist or is not confirmed
+                    return View("ForgotPasswordConfirmation");
+                }
+
+                // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=532713
+                // Send an email with this link
+                var code = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.userid, code = code }, protocol: HttpContext.Request.Scheme);
+                await _emailSender.SendEmailAsync(
+                   model.emailaddress,
+                   "Reset Password",
+                   $"Please reset your password by clicking here: {callbackUrl}");
+
+                return View("ForgotPasswordConfirmation");
+            }
+
+            // If we got this far, something failed, redisplay form
+            return View(model);
+        }
+
         private async Task<owin_userEntity> BuildLoginViewModelAsync(string returnUrl)
         {
             var schemes = await _schemeProvider.GetAllSchemesAsync();

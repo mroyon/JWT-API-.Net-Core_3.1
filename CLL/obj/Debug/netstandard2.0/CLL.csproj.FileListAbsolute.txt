@@ -25,14 +25,6 @@ C:\Projects\KAFCoreProjects\New folder\CLL\obj\Debug\netstandard2.0\CLL.Assembly
 C:\Projects\KAFCoreProjects\New folder\CLL\obj\Debug\netstandard2.0\CLL.csproj.CoreCompileInputs.cache
 C:\Projects\KAFCoreProjects\New folder\CLL\obj\Debug\netstandard2.0\CLL.dll
 C:\Projects\KAFCoreProjects\New folder\CLL\obj\Debug\netstandard2.0\CLL.pdb
-C:\Projects\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.deps.json
-C:\Projects\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.dll
-C:\Projects\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.pdb
-C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.AssemblyInfoInputs.cache
-C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.AssemblyInfo.cs
-C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.csproj.CoreCompileInputs.cache
-C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.dll
-C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.pdb
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.deps.json
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.pdb
@@ -42,7 +34,6 @@ C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.csproj.CoreCompileInputs.cache
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.dll
 C:\Projects\Core\Project_2020\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.pdb
-C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.csprojAssemblyReference.cache
 C:\Projects\Core\Work\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.deps.json
 C:\Projects\Core\Work\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.dll
 C:\Projects\Core\Work\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.pdb
@@ -70,3 +61,11 @@ C:\Projects\Core\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.Assembly
 C:\Projects\Core\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.csproj.CoreCompileInputs.cache
 C:\Projects\Core\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.dll
 C:\Projects\Core\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.AssemblyInfoInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.AssemblyInfo.cs
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.csproj.CoreCompileInputs.cache
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.deps.json
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.dll
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\bin\Debug\netstandard2.0\CLL.pdb
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.dll
+C:\Projects\JWT-API-.Net-Core_3.1\CLL\obj\Debug\netstandard2.0\CLL.pdb

@@ -158,9 +158,31 @@ namespace CoreWebApp.CustomIdentityManagers
         }
 
 
+        public override async Task<owin_userEntity> FindByEmailAsync(string emailaddress)
+        {
+            ThrowIfDisposed();
+            //CancellationToken cancellationToken = new CancellationToken();
+            //var result = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor). .UserSignInAsync(user, cancellationToken);
+            //var success = false;
+            //if (result != null)
+            //{
+            //    success = true;
+            //}
+            //if (!success)
+            //{
+            //    Logger.LogWarning(0, "Invalid password for user {userId}.", await GetUserIdAsync(user));
+            //}
+            //return success;
+
+            //var user = await Store.f FindByEmailAsync(emailaddress, cancellationToken);
+
+            //if (user != null)
+            //    return user;
+            //else
+                throw new InvalidCredentialException("Oops!!!");
+        }
 
 
-        
 
 
     }

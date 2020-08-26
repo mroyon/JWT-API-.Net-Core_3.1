@@ -4,10 +4,99 @@
         <name>CoreWebApp</name>
     </assembly>
     <members>
+        <member name="M:CoreWebApp.Controllers.AccountController.#ctor(CoreWebApp.CustomIdentityManagers.ApplicationUserManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},CoreWebApp.CustomIdentityManagers.ApplicationSignInManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},CoreWebApp.IntraServices.IEmailSender,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Localization.IStringLocalizerFactory,Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider)">
+            <summary>
+            
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+            <param name="emailSender"></param>
+            <param name="loggerFactory"></param>
+            <param name="factory"></param>
+            <param name="schemeProvider"></param>
+        </member>
+        <member name="M:CoreWebApp.Controllers.AccountController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.AccountController.Login(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.AccountController.Login(BDO.DataAccessObjects.SecurityModule.owin_userEntity)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.AccountController.Logout(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="logoutId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.AccountController.Logout(BDO.DataAccessObjects.SecurityModule.owin_userEntity)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.AccountController.ForgotPassword">
+            <summary>
+            ForgotPassword GET
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.AccountController.ForgotPassword(BDO.DataAccessObjects.SecurityModule.owin_userEntity)">
+            <summary>
+            ForgotPassword
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.HomeController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CoreWebApp.Controllers.HomeController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.HomeController.Privacy">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:CoreWebApp.Controllers.HomeController.Error(System.String)">
             <summary>
             Shows the error page
             </summary>
+        </member>
+        <member name="M:CoreWebApp.Controllers.SetLanguageController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.SetLanguageController.SetLanguage(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="culture"></param>
+            <param name="returnUrl"></param>
+            <returns></returns>
         </member>
         <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.DefaultError">
             <summary>
