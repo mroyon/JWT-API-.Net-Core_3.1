@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using BDO.DataAccessObjects.ExtendedEntities;
 using BDO.DataAccessObjects.SecurityModule;
@@ -26,6 +27,15 @@ namespace CoreWebApp.Controllers
         private readonly IStringLocalizer _sharedLocalizer;
         private readonly IAuthenticationSchemeProvider _schemeProvider;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="userManager"></param>
+        /// <param name="signInManager"></param>
+        /// <param name="emailSender"></param>
+        /// <param name="loggerFactory"></param>
+        /// <param name="factory"></param>
+        /// <param name="schemeProvider"></param>
         public AccountController(
             ApplicationUserManager<owin_userEntity> userManager,
             ApplicationSignInManager<owin_userEntity> signInManager,
@@ -46,11 +56,20 @@ namespace CoreWebApp.Controllers
             _sharedLocalizer = factory.Create("SharedResource", assemblyName.Name);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             return View();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="returnUrl"></param>
+        /// <returns></returns>
         [HttpGet]
         [AllowAnonymous]
         public async Task<IActionResult> Login(string returnUrl)
@@ -59,7 +78,11 @@ namespace CoreWebApp.Controllers
             return View(vm);
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -110,6 +133,44 @@ namespace CoreWebApp.Controllers
             return View(await BuildLoginViewModelAsync(model));
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="logoutId"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<IActionResult> Logout(string logoutId)
+        {
+            var vm = await BuildLogoutViewModelAsync(logoutId);
+            if (vm.ShowLogoutPrompt == false)
+            {
+                return await Logout(vm);
+            }
+            return View(vm);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout(owin_userEntity model)
+        {
+            var idp = User?.FindFirst(JwtClaimTypes.IdentityProvider)?.Value;
+            await _signInManager.SignOutAsync();
+            HttpContext.User = new ClaimsPrincipal(new ClaimsIdentity());
+            var vm = new owin_userEntity
+            {
+                AutomaticRedirectAfterSignOut = AccountOptions.AutomaticRedirectAfterSignOut,
+                //PostLogoutRedirectUri = logout?.PostLogoutRedirectUri,
+                ClientName = string.Empty,
+                SignOutIframeUrl = string.Empty,
+                LogoutId = model.LogoutId
+            };
+            return View("LoggedOut", vm);
+        }
 
         private async Task<owin_userEntity> BuildLoginViewModelAsync(string returnUrl)
         {
@@ -142,6 +203,19 @@ namespace CoreWebApp.Controllers
             vm.AllowRememberLogin = model.AllowRememberLogin;
             return vm;
         }
+
+        private async Task<owin_userEntity> BuildLogoutViewModelAsync(string logoutId)
+        {
+            var vm = new owin_userEntity { LogoutId = logoutId, ShowLogoutPrompt = AccountOptions.ShowLogoutPrompt };
+
+            if (User?.Identity.IsAuthenticated != true)
+            {
+                vm.ShowLogoutPrompt = false;
+                return vm;
+            }
+            return vm;
+        }
+
         private IActionResult RedirectToLocal(string returnUrl)
         {
             if (Url.IsLocalUrl(returnUrl))
@@ -153,6 +227,7 @@ namespace CoreWebApp.Controllers
                 return RedirectToAction(nameof(HomeController.Index), "Home");
             }
         }
+
 
     }
 }

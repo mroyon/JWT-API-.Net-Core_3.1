@@ -9,11 +9,21 @@ namespace CoreWebApp.Controllers
     [AllowAnonymous]
     public class SetLanguageController : Controller
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             return View();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="culture"></param>
+        /// <param name="returnUrl"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult SetLanguage(string culture, string returnUrl)
         {

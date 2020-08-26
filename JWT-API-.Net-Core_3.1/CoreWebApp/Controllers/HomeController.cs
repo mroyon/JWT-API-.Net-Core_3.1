@@ -11,16 +11,27 @@ namespace CoreWebApp.Controllers
     {
        // private readonly IIdentityServerInteractionService _interaction;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public HomeController()
         {
             //_interaction = interaction;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             return View();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Privacy()
         {
             return View();
