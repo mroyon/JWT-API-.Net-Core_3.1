@@ -12,6 +12,7 @@ using CoreWebApp.IntraServices;
 using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
@@ -115,6 +116,8 @@ namespace CoreWebApp.Controllers
                 if (result.Succeeded)
                 {
                     _logger.LogInformation(1, "User logged in.");
+                    var claimsIdentity = HttpContext.User.Identity as ClaimsIdentity;
+
                     return RedirectToLocal(returnUrl);
                 }
                 if (result.IsLockedOut)
@@ -211,7 +214,7 @@ namespace CoreWebApp.Controllers
 
             if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByNameAsync(model.emailaddress);
+                var user = await _userManager.FindByEmailAsync(model.emailaddress);
                 // TODO add this is all users need to be validated
                 // if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
                 if (user == null)
@@ -235,6 +238,82 @@ namespace CoreWebApp.Controllers
             // If we got this far, something failed, redisplay form
             return View(model);
         }
+
+        /// <summary>
+        /// ForgotPasswordConfirmation - GET
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult ForgotPasswordConfirmation()
+        {
+            return View();
+        }
+
+        /// <summary>
+        /// ResetPassword = GET
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult ResetPassword(string code = null)
+        {
+            return code == null ? View("Error") : View();
+        }
+
+        /// <summary>
+        /// ResetPassword = POST
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ResetPassword(owin_userEntity model)
+        {
+            ModelState.Remove("applicationid");
+            ModelState.Remove("masteruserid");
+            ModelState.Remove("username");
+            ModelState.Remove("loweredusername");
+            ModelState.Remove("isanonymous");
+            ModelState.Remove("masprivatekey");
+            ModelState.Remove("maspublickey");
+            ModelState.Remove("passwordsalt");
+            ModelState.Remove("passwordkey");
+            ModelState.Remove("passwordvector");
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            var user = await _userManager.FindByEmailAsync(model.emailaddress);
+            if (user == null)
+            {
+                // Don't reveal that the user does not exist
+                return RedirectToAction(nameof(AccountController.ResetPasswordConfirmation), "Account");
+            }
+            var result = await _userManager.ResetPasswordAsync(user, model.code, model.password);
+            if (result.Succeeded)
+            {
+                return RedirectToAction(nameof(AccountController.ResetPasswordConfirmation), "Account");
+            }
+            AddErrors(result);
+            return View();
+        }
+
+        /// <summary>
+        /// ResetPasswordConfirmation = GET
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult ResetPasswordConfirmation()
+        {
+            return View();
+        }
+
+
+
 
         private async Task<owin_userEntity> BuildLoginViewModelAsync(string returnUrl)
         {
@@ -292,6 +371,13 @@ namespace CoreWebApp.Controllers
             }
         }
 
+        private void AddErrors(IdentityResult result)
+        {
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+        }
 
     }
 }

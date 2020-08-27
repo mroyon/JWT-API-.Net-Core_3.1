@@ -7,15 +7,27 @@ using System.Threading.Tasks;
 
 namespace CoreWebApp.IntraServices
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class EmailSender : IEmailSender
     {
         private readonly IOptions<EmailSettings> _optionsEmailSettings;
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="optionsEmailSettings"></param>
         public EmailSender(IOptions<EmailSettings> optionsEmailSettings)
         {
             _optionsEmailSettings = optionsEmailSettings;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="subject"></param>
+        /// <param name="message"></param>
+        /// <returns></returns>
         public Task SendEmailAsync(string email, string subject, string message)
         {
 
@@ -23,6 +35,13 @@ namespace CoreWebApp.IntraServices
             return Task.FromResult(0);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="subject"></param>
+        /// <param name="message"></param>
+        /// <returns></returns>
         public async Task Execute(string email, string subject, string message)
         {
             try
@@ -32,7 +51,9 @@ namespace CoreWebApp.IntraServices
                     From = new MailAddress(_optionsEmailSettings.Value.UsernameEmail, _optionsEmailSettings.Value.FromEmail)
                 };
                 mail.To.Add(new MailAddress(email));
-                mail.CC.Add(new MailAddress(_optionsEmailSettings.Value.CcEmail));
+
+                if (_optionsEmailSettings.Value.CcEmail != "ccEmail")
+                    mail.CC.Add(new MailAddress(_optionsEmailSettings.Value.CcEmail));
 
                 mail.Subject = subject;
                 mail.Body = message;

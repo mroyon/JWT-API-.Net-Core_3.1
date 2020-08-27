@@ -62,6 +62,32 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="M:CoreWebApp.Controllers.AccountController.ForgotPasswordConfirmation">
+            <summary>
+            ForgotPasswordConfirmation - GET
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.AccountController.ResetPassword(System.String)">
+            <summary>
+            ResetPassword = GET
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.AccountController.ResetPassword(BDO.DataAccessObjects.SecurityModule.owin_userEntity)">
+            <summary>
+            ResetPassword = POST
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.AccountController.ResetPasswordConfirmation">
+            <summary>
+            ResetPasswordConfirmation = GET
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:CoreWebApp.Controllers.HomeController.#ctor">
             <summary>
             
@@ -239,6 +265,35 @@
             Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password entered does not contain an upper case letter, which is required by the password policy.
             </summary>
             <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password entered does not contain an upper case letter.</returns>
+        </member>
+        <member name="T:CoreWebApp.IntraServices.EmailSender">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CoreWebApp.IntraServices.EmailSender.#ctor(Microsoft.Extensions.Options.IOptions{BDO.DataAccessObjects.CommonEntities.EmailSettings})">
+            <summary>
+            
+            </summary>
+            <param name="optionsEmailSettings"></param>
+        </member>
+        <member name="M:CoreWebApp.IntraServices.EmailSender.SendEmailAsync(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="email"></param>
+            <param name="subject"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.IntraServices.EmailSender.Execute(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="email"></param>
+            <param name="subject"></param>
+            <param name="message"></param>
+            <returns></returns>
         </member>
         <member name="M:CoreWebApp.Providers.LocalizationQueryProvider.DetermineProviderCultureResult(Microsoft.AspNetCore.Http.HttpContext)">
             <inheritdoc />

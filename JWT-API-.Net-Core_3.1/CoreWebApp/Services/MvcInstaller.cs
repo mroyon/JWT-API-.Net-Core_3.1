@@ -25,6 +25,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CoreWebApp.IntraServices;
 using IdentityServer4.Services;
+using BDO.DataAccessObjects.CommonEntities;
 
 namespace CoreWebApp.Services
 {
@@ -35,6 +36,7 @@ namespace CoreWebApp.Services
 
             services.AddResponseCaching();
 
+            services.Configure<EmailSettings>(configuration.GetSection("EmailSettings"));
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
@@ -102,6 +104,7 @@ namespace CoreWebApp.Services
                     options.EnableEndpointRouting = false;
                     options.Conventions.Add(new AddAuthorizeFiltersControllerConvention());
                     //options.Filters.Add<ValidationFilter>();
+                    options.Filters.Add<SecurityFillerAttribute>();
                 })
                 .AddFluentValidation(mvcConfiguration => mvcConfiguration.RegisterValidatorsFromAssemblyContaining<Startup>())
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);

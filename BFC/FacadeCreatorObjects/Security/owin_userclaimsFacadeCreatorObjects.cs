@@ -14,23 +14,23 @@ namespace BFC.FacadeCreatorObjects.Security
 		
         }
 		
-		public static KAF.IBusinessFacadeObjects.Iowin_userclaimsFacadeObjects GetFacadeCreate(IHttpContextAccessor httpContextAccessor)
+		public static Iowin_userclaimsFacadeObjects GetFacadeCreate(IHttpContextAccessor httpContextAccessor)
         {
-			KAF.IBusinessFacadeObjects.Iowin_userclaimsFacadeObjects facade = null;
-            HttpContext context = HttpContext.Current;
+            var context = httpContextAccessor.HttpContext;
+            Iowin_userclaimsFacadeObjects facade = null;
             if (context != null)
             {
-                facade = context.Items["Iowin_userclaimsFacadeObjects"] as KAF.IBusinessFacadeObjects.Iowin_userclaimsFacadeObjects;
-    
+                facade = context.Items["Iowin_userclaimsFacadeObjects"] as Iowin_userclaimsFacadeObjects;
+
                 if (facade == null)
                 {
-                    facade = new KAF.BusinessFacadeObjects.owin_userclaimsFacadeObjects();
+                    facade = new owin_userclaimsFacadeObjects();
                     context.Items["Iowin_userclaimsFacadeObjects"] = facade;
                 }
             }
             else
             {
-                facade = new KAF.BusinessFacadeObjects.owin_userclaimsFacadeObjects();
+                facade = new owin_userclaimsFacadeObjects();
                 return facade;
             }
             return facade;

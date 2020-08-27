@@ -133,8 +133,6 @@ namespace CoreWebApp.CustomIdentityManagers
             return result;
         }
 
-       
-
         public async Task<string> GetSecFilledFromClaimsPrincipal(ClaimsPrincipal User)
         {
             var sec = User.FindFirst("secobject");
@@ -157,33 +155,75 @@ namespace CoreWebApp.CustomIdentityManagers
                 throw new InvalidCredentialException("Oops!!!");
         }
 
-
         public override async Task<owin_userEntity> FindByEmailAsync(string emailaddress)
         {
             ThrowIfDisposed();
-            //CancellationToken cancellationToken = new CancellationToken();
-            //var result = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor). .UserSignInAsync(user, cancellationToken);
-            //var success = false;
-            //if (result != null)
-            //{
-            //    success = true;
-            //}
-            //if (!success)
-            //{
-            //    Logger.LogWarning(0, "Invalid password for user {userId}.", await GetUserIdAsync(user));
-            //}
-            //return success;
+            CancellationToken cancellationToken = new CancellationToken();
+            var user = await BFC.FacadeCreatorObjects.Security.owin_userFCC.GetFacadeCreate(_contextAccessor).GetAll(new owin_userEntity()
+            {
+                emailaddress = emailaddress
+            }, cancellationToken);
+            if (user != null)
+            {
+                return user.FirstOrDefault();
+            }
+            else
+                return null;
 
-            //var user = await Store.f FindByEmailAsync(emailaddress, cancellationToken);
-
-            //if (user != null)
-            //    return user;
-            //else
-                throw new InvalidCredentialException("Oops!!!");
         }
 
+        public override async Task<IdentityResult> ResetPasswordAsync(owin_userEntity user, string token, string newPassword)
+        {
+            ThrowIfDisposed();
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user));
+            }
+
+            // Make sure the token is valid and the stamp matches
+            if (!await VerifyUserTokenAsync(user, Options.Tokens.PasswordResetTokenProvider, ResetPasswordTokenPurpose, token))
+            {
+                return IdentityResult.Failed(ErrorDescriber.InvalidToken());
+            }
+
+            var result = await UpdatePasswordHash(user, newPassword, validatePassword: true);
+            if (!result.Succeeded)
+            {
+                return result;
+            }
+            return await UpdateUserAsync(user);
+        }
+
+        protected virtual Task<IdentityResult> UpdatePasswordHash(owin_userEntity user, string newPassword, bool validatePassword)
+            => UpdatePasswordHash(GetPasswordStore(), user, newPassword, validatePassword);
+
+        private async Task<IdentityResult> UpdatePasswordHash(IUserPasswordStore<owin_userEntity> passwordStore,
+            owin_userEntity user, string newPassword, bool validatePassword = true)
+        {
+            if (validatePassword)
+            {
+                var validate = await ValidatePasswordAsync(user, newPassword);
+                if (!validate.Succeeded)
+                {
+                    return validate;
+                }
+            }
+            var hash = newPassword != null ? PasswordHasher.HashPassword(user, newPassword) : null;
 
 
+            await passwordStore.SetPasswordHashAsync(user, hash, CancellationToken);
+            return IdentityResult.Success;
+        }
+
+        private IUserPasswordStore<owin_userEntity> GetPasswordStore()
+        {
+            var cast = Store as IUserPasswordStore<owin_userEntity>;
+            if (cast == null)
+            {
+                throw new NotSupportedException("StoreNotIUserPasswordStore");
+            }
+            return cast;
+        }
 
     }
 }

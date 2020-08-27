@@ -8,6 +8,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
+using System.Threading;
 
 namespace CoreWebApp.CustomIdentityManagers
 {
@@ -92,47 +93,24 @@ namespace CoreWebApp.CustomIdentityManagers
         public override async Task<SignInResult> PasswordSignInAsync(owin_userEntity user, string password,
            bool isPersistent, bool lockoutOnFailure)
         {
+            CancellationToken cancellationToken = new CancellationToken();
             if (user == null)
             {
                 throw new ArgumentNullException(nameof(user));
             }
 
             var attempt = await CheckPasswordSignInAsync(user, password, lockoutOnFailure);
+            if (attempt.Succeeded)
+            {
+               // await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor).UserSignInLogUpdateAsync(user, cancellationToken);
+            }
             return attempt.Succeeded
                 ? await SignInOrTwoFactorAsync(user, isPersistent)
                 : attempt;
         }
 
+        //public async Task<long> update
 
-
-        public override Task SignInAsync(owin_userEntity user, bool isPersistent, string authenticationMethod = null)
-        {
-            return SignInAsync(user, new AuthenticationProperties { IsPersistent = isPersistent }, authenticationMethod);
-        }
-
-        public async Task SignInAsync(owin_userEntity user, AuthenticationProperties authenticationProperties, string authenticationMethod = null)
-        {
-            var userPrincipal = await CreateUserPrincipalAsync(user);
-            // Review: should we guard against CreateUserPrincipal returning null?
-            if (authenticationMethod != null)
-            {
-                userPrincipal.Identities.First().AddClaim(new Claim(ClaimTypes.AuthenticationMethod, authenticationMethod));
-            }
-            await Context.SignInAsync(IdentityConstants.ApplicationScheme,
-                userPrincipal,
-                authenticationProperties ?? new AuthenticationProperties());
-        }
-
-
-        public override bool IsSignedIn(ClaimsPrincipal principal)
-        {
-            if (principal == null)
-            {
-                throw new ArgumentNullException(nameof(principal));
-            }
-            return principal?.Identities != null &&
-                principal.Identities.Any(i => i.AuthenticationType == IdentityConstants.ApplicationScheme);
-        }
 
 
     }

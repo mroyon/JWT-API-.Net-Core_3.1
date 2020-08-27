@@ -14,23 +14,23 @@ namespace BFC.FacadeCreatorObjects.Security
 		
         }
 		
-		public static KAF.IBusinessFacadeObjects.Iowin_userpasswordresetinfoFacadeObjects GetFacadeCreate(IHttpContextAccessor httpContextAccessor)
+		public static Iowin_userpasswordresetinfoFacadeObjects GetFacadeCreate(IHttpContextAccessor httpContextAccessor)
         {
-			KAF.IBusinessFacadeObjects.Iowin_userpasswordresetinfoFacadeObjects facade = null;
-            HttpContext context = HttpContext.Current;
+            var context = httpContextAccessor.HttpContext;
+            Iowin_userpasswordresetinfoFacadeObjects facade = null;
             if (context != null)
             {
-                facade = context.Items["Iowin_userpasswordresetinfoFacadeObjects"] as KAF.IBusinessFacadeObjects.Iowin_userpasswordresetinfoFacadeObjects;
-    
+                facade = context.Items["Iowin_userpasswordresetinfoFacadeObjects"] as Iowin_userpasswordresetinfoFacadeObjects;
+
                 if (facade == null)
                 {
-                    facade = new KAF.BusinessFacadeObjects.owin_userpasswordresetinfoFacadeObjects();
+                    facade = new owin_userpasswordresetinfoFacadeObjects();
                     context.Items["Iowin_userpasswordresetinfoFacadeObjects"] = facade;
                 }
             }
             else
             {
-                facade = new KAF.BusinessFacadeObjects.owin_userpasswordresetinfoFacadeObjects();
+                facade = new owin_userpasswordresetinfoFacadeObjects();
                 return facade;
             }
             return facade;

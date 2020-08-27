@@ -14,26 +14,27 @@ namespace BFC.FacadeCreatorObjects.Security
 		
         }
 		
-		public static KAF.IBusinessFacadeObjects.Iowin_rolepermissionFacadeObjects GetFacadeCreate(IHttpContextAccessor httpContextAccessor)
+		public static Iowin_rolepermissionFacadeObjects GetFacadeCreate(IHttpContextAccessor httpContextAccessor)
         {
-			KAF.IBusinessFacadeObjects.Iowin_rolepermissionFacadeObjects facade = null;
-            HttpContext context = HttpContext.Current;
+            var context = httpContextAccessor.HttpContext;
+            Iowin_rolepermissionFacadeObjects facade = null;
             if (context != null)
             {
-                facade = context.Items["Iowin_rolepermissionFacadeObjects"] as KAF.IBusinessFacadeObjects.Iowin_rolepermissionFacadeObjects;
-    
+                facade = context.Items["Iowin_rolepermissionFacadeObjects"] as Iowin_rolepermissionFacadeObjects;
+
                 if (facade == null)
                 {
-                    facade = new KAF.BusinessFacadeObjects.owin_rolepermissionFacadeObjects();
+                    facade = new owin_rolepermissionFacadeObjects();
                     context.Items["Iowin_rolepermissionFacadeObjects"] = facade;
                 }
             }
             else
             {
-                facade = new KAF.BusinessFacadeObjects.owin_rolepermissionFacadeObjects();
+                facade = new owin_rolepermissionFacadeObjects();
                 return facade;
             }
             return facade;
+
         }
 		
 		

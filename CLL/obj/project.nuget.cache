@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Zasx7EgJN6Dp5hOKg4CGVQFvqt3Veh4fhAuvUJGSPBQ6wGUqSmMFDc7cNOJN2eAJjXH+vKlzVHn5iEZZegfh9A==",
+  "dgSpecHash": "PNfI9km55z8hz+KOOBTw5f1YDFiLk3UkPfcHruVMPwWb1l8tcHUqQs1q+Q4xS9DZnBnopScZN1wamHtvTdbsvQ==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
+  "projectFilePath": "C:\\Projects\\Core\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\royon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []

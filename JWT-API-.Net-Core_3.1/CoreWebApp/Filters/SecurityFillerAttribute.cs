@@ -23,11 +23,10 @@ namespace CoreWebApp.Filters
 
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            var tenant = await FillSecurity(context);
 
+            var tenant = await FillSecurity(context);
             // Execute the rest of the MVC filter pipeline
             var resultContext = await next();
-
             if (resultContext.Result is ViewResult view)
             {
                 view.ViewData["Tenant"] = tenant;
