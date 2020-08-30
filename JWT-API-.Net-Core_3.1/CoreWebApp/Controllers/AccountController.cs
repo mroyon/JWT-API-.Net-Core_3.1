@@ -315,7 +315,6 @@ namespace CoreWebApp.Controllers
 
 
 
-
         private async Task<owin_userEntity> BuildLoginViewModelAsync(string returnUrl)
         {
             var schemes = await _schemeProvider.GetAllSchemesAsync();
