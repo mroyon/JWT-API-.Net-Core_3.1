@@ -179,14 +179,14 @@
             <param name="lockoutOnFailure"></param>
             <returns></returns>
         </member>
-        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationUserManager`1.addowin_userlogintrail(BDO.Base.SecurityCapsule)">
+        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationUserManager`1.loginowin_userlogintrail(BDO.Base.SecurityCapsule)">
             <summary>
             addowin_userlogintrail
             </summary>
             <param name="securityCapsule"></param>
             <returns></returns>
         </member>
-        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationUserManager`1.updateowin_userlogintrail(System.Security.Claims.ClaimsIdentity)">
+        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationUserManager`1.logoutowin_userlogintrail(System.Security.Claims.ClaimsIdentity)">
             <summary>
             updateowin_userlogintrail
             </summary>
