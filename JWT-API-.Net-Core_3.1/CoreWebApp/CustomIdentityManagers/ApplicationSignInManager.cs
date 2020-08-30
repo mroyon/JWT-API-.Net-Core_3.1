@@ -14,6 +14,7 @@ using Microsoft.VisualBasic;
 using BDO.Base;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using CoreWebApp.IntraServices;
 
 namespace CoreWebApp.CustomIdentityManagers
 {
@@ -160,78 +161,8 @@ namespace CoreWebApp.CustomIdentityManagers
         /// </summary>
         /// <param name="claimsIdentity"></param>
         /// <returns></returns>
-        public async Task<long> addowin_userlogintrail(ClaimsIdentity claimsIdentity)
-        {
-            SecurityCapsule _securityCapsule = new SecurityCapsule();
-            long resLoginUpdate = -99;
-            if (claimsIdentity.Claims.Count() > 0)
-            {
-                _securityCapsule = JsonConvert.DeserializeObject<SecurityCapsule>(claimsIdentity.Claims.ToList().Where(p => p.Type == "secobject").FirstOrDefault().Value);
-                if (_securityCapsule != null)
-                {
-                    CancellationToken cancellationToken = new CancellationToken();
-                    resLoginUpdate = await BFC.FacadeCreatorObjects.Security.owin_userlogintrailFCC.GetFacadeCreate(_contextAccessor).Add(new owin_userlogintrailEntity()
-                    {
-                        userid = _securityCapsule.userid,
-                        masteruserid = _securityCapsule.createdby,
-                        loginfrom = "Web App",
-                        logindate = _securityCapsule.createddate,
-                        logoutdate = null,
-                        machineip = _securityCapsule.ipaddress,
-                        loginstatus = "LOGIN",
-                        loginstatusbit = true,
-                        sessionid = _securityCapsule.sessionid,
-                        usertoken = _securityCapsule.transid,
-                        BaseSecurityParam = _securityCapsule
 
-                    }, cancellationToken);
-                    if (resLoginUpdate > 0)
-                    {
-
-                        Task<owin_userEntity> userAwaiter = this.UserManager.FindByNameAsync(_securityCapsule.username);
-                        owin_userEntity user = await userAwaiter;
-                        if (user != null)
-                        {
-                            claimsIdentity.AddClaim(new Claim("resLoginUpdate", resLoginUpdate.ToString()));
-                            await base.RefreshSignInAsync(user);
-                        }
-                        
-                    }
-                }
-            }
-            return resLoginUpdate;
-        }
-
-        public async Task<long> updateowin_userlogintrail(ClaimsIdentity claimsIdentity, string resLoginSeriale)
-        {
-            SecurityCapsule _securityCapsule = new SecurityCapsule();
-            long resLoginUpdate = -99;
-            if (claimsIdentity.Claims.Count() > 0)
-            {
-                _securityCapsule = JsonConvert.DeserializeObject<SecurityCapsule>(claimsIdentity.Claims.ToList().Where(p => p.Type == "secobject").FirstOrDefault().Value);
-                if (_securityCapsule != null)
-                {
-                    CancellationToken cancellationToken = new CancellationToken();
-                    resLoginUpdate = await BFC.FacadeCreatorObjects.Security.owin_userlogintrailFCC.GetFacadeCreate(_contextAccessor).Update(new owin_userlogintrailEntity()
-                    {
-                        serialno = long.Parse(resLoginSeriale),
-                        userid = _securityCapsule.userid,
-                        masteruserid = _securityCapsule.createdby,
-                        loginfrom = "Web App",
-                        logindate = _securityCapsule.createddate,
-                        logoutdate = DateTime.Now,
-                        machineip = _securityCapsule.ipaddress,
-                        loginstatus = "LOGOUT",
-                        loginstatusbit = true,
-                        sessionid = _securityCapsule.sessionid,
-                        usertoken = _securityCapsule.transid,
-                        BaseSecurityParam = _securityCapsule
-
-                    }, cancellationToken);
-                }
-            }
-            return resLoginUpdate;
-        }
+       
 
     }
 }

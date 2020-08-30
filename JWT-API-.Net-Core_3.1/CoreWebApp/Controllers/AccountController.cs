@@ -162,8 +162,7 @@ namespace CoreWebApp.Controllers
         {
             var idp = User?.FindFirst(JwtClaimTypes.IdentityProvider)?.Value;
             ClaimsIdentity claimsIdentity = HttpContext.User.Identity as ClaimsIdentity;
-            string resLoginUpdate = ((ClaimsIdentity)User.Identity).FindFirst("resLoginUpdate").ToString();
-            await _signInManager.updateowin_userlogintrail(claimsIdentity, resLoginUpdate);
+            await _userManager.logoutowin_userlogintrail(claimsIdentity);
             await _signInManager.SignOutAsync();
             HttpContext.User = new ClaimsPrincipal(new ClaimsIdentity());
             var vm = new owin_userEntity

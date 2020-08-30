@@ -82,10 +82,11 @@ namespace CoreWebApp.CustomIdentityManagers
             {
                 if (!(Store is IProtectedUserStore<TUser>))
                 {
-                    //throw new InvalidOperationException(Resources.StoreNotIProtectedUserStore);
+                    throw new InvalidOperationException("!(Store is IProtectedUserStore<TUser>)");
                 }
                 if (services.GetService<ILookupProtector>() == null)
                 {
+                    throw new InvalidOperationException("!(Store is IProtectedUserStore<TUser>)");
                     //throw new InvalidOperationException(Resources.NoPersonalDataProtector);
                 }
             }
@@ -228,6 +229,74 @@ namespace CoreWebApp.CustomIdentityManagers
         }
 
         /// <summary>
+        /// addowin_userlogintrail
+        /// </summary>
+        /// <param name="securityCapsule"></param>
+        /// <returns></returns>
+        public virtual async Task<long> loginowin_userlogintrail(SecurityCapsule securityCapsule)
+        {
+            ThrowIfDisposed();
+            long resLoginAdd = -99;
+
+            CancellationToken cancellationToken = new CancellationToken();
+            resLoginAdd = await BFC.FacadeCreatorObjects.Security.owin_userlogintrailFCC.GetFacadeCreate(_contextAccessor).Add(new owin_userlogintrailEntity()
+            {
+                userid = securityCapsule.userid,
+                masteruserid = securityCapsule.createdby,
+                loginfrom = "Web App",
+                logindate = securityCapsule.createddate,
+                logoutdate = null,
+                machineip = securityCapsule.ipaddress,
+                loginstatus = "LOGIN",
+                loginstatusbit = true,
+                sessionid = securityCapsule.sessionid,
+                usertoken = securityCapsule.transid,
+                BaseSecurityParam = securityCapsule
+
+            }, cancellationToken);
+
+            return resLoginAdd;
+        }
+
+        /// <summary>
+        /// updateowin_userlogintrail
+        /// </summary>
+        /// <param name="claimsIdentity"></param>
+        /// <param name="resLoginSeriale"></param>
+        /// <returns></returns>
+        public virtual async Task<long> logoutowin_userlogintrail(ClaimsIdentity claimsIdentity)
+        {
+            SecurityCapsule _securityCapsule = new SecurityCapsule();
+            long resLoginUpdate = -99;
+            if (claimsIdentity.Claims.Count() > 0)
+            {
+                var resLoginSeriale = claimsIdentity.FindFirst("resLoginSerial").Value;
+                _securityCapsule = JsonConvert.DeserializeObject<SecurityCapsule>(claimsIdentity.Claims.ToList().Where(p => p.Type == "secobject").FirstOrDefault().Value);
+                if (_securityCapsule != null)
+                {
+                    CancellationToken cancellationToken = new CancellationToken();
+                    resLoginUpdate = await BFC.FacadeCreatorObjects.Security.owin_userlogintrailFCC.GetFacadeCreate(_contextAccessor).Update(new owin_userlogintrailEntity()
+                    {
+                        serialno = long.Parse(resLoginSeriale),
+                        userid = _securityCapsule.userid,
+                        masteruserid = _securityCapsule.createdby,
+                        loginfrom = "Web App",
+                        logindate = _securityCapsule.createddate,
+                        logoutdate = DateTime.Now,
+                        machineip = _securityCapsule.ipaddress,
+                        loginstatus = "LOGOUT",
+                        loginstatusbit = false,
+                        sessionid = _securityCapsule.sessionid,
+                        usertoken = _securityCapsule.transid,
+                        BaseSecurityParam = _securityCapsule
+
+                    }, cancellationToken);
+                }
+            }
+            return resLoginUpdate;
+        }
+
+        /// <summary>
         /// UpdateUserPasswordResetInfo
         /// </summary>
         /// <param name="user"></param>
@@ -252,6 +321,31 @@ namespace CoreWebApp.CustomIdentityManagers
             else
                 throw new InvalidCredentialException("User Password Reset history could not added");
         }
+
+        /// <summary>
+        /// GetClaimsAsync
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        //public override async Task<IList<Claim>> GetClaimsAsync(owin_userEntity user)
+        //{
+        //    ThrowIfDisposed();
+        //    var claimStore = GetClaimStore();
+        //    if (user == null)
+        //    {
+        //        throw new ArgumentNullException(nameof(user));
+        //    }
+        //    return await claimStore.GetClaimsAsync(user, CancellationToken);
+        //}
+        //private IUserClaimStore<owin_userEntity> GetClaimStore()
+        //{
+        //    var cast = Store as IUserClaimStore<owin_userEntity>;
+        //    if (cast == null)
+        //    {
+        //        throw new NotSupportedException("StoreNotIUserClaimStore");
+        //    }
+        //    return cast;
+        //}
 
     }
 }

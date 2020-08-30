@@ -1,6 +1,7 @@
 ﻿using AppConfig.HelperClasses;
 using BDO.Base;
 using BDO.DataAccessObjects.SecurityModule;
+using CoreWebApp.CustomIdentityManagers;
 using IdentityModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
@@ -18,6 +19,7 @@ namespace CoreWebApp.IntraServices
     public class AdditionalUserClaimsPrincipalFactory : UserClaimsPrincipalFactory<owin_userEntity, IdentityRole>
     {
         private readonly IHttpContextAccessor _contextAccessor;
+        private readonly ApplicationUserManager<owin_userEntity> _userManager;
         /// <summary>
         /// AdditionalUserClaimsPrincipalFactory
         /// </summary>
@@ -26,13 +28,14 @@ namespace CoreWebApp.IntraServices
         /// <param name="optionsAccessor"></param>
         /// <param name="contextAccessor"></param>
         public AdditionalUserClaimsPrincipalFactory(
-            UserManager<owin_userEntity> userManager,
+            ApplicationUserManager<owin_userEntity> userManager,
             RoleManager<IdentityRole> roleManager,
             IOptions<IdentityOptions> optionsAccessor,
                         IHttpContextAccessor contextAccessor)
             : base(userManager, roleManager, optionsAccessor)
         {
             _contextAccessor = contextAccessor;
+            _userManager = userManager;
         }
 
         /// <summary>
@@ -79,6 +82,9 @@ namespace CoreWebApp.IntraServices
             string strserialize = JsonConvert.SerializeObject(_securityCapsule);
             claims.Add(new Claim("secobject", strserialize));
 
+            var resLoginSerial = await _userManager.loginowin_userlogintrail(_securityCapsule);
+            if(resLoginSerial > 0)
+                claims.Add(new Claim("resLoginSerial", resLoginSerial.ToString()));
 
             if (user.DataEventRecordsRole == "dataEventRecords.admin")
             {

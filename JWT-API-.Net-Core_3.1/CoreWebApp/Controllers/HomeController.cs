@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using BDO.DataAccessObjects.SecurityModule;
 using CoreWebApp.CustomIdentityManagers;
 using CoreWebApp.InAppResources;
+using CoreWebApp.IntraServices;
 using CoreWebApp.Models;
 using IdentityServer4.Extensions;
 using IdentityServer4.Services;
@@ -51,12 +52,7 @@ namespace CoreWebApp.Controllers
             var str = ((ClaimsIdentity)User.Identity).FindFirst("resLoginUpdate");
             if (str == null)
             {
-                long resLoginUpdate = await _signInManager.addowin_userlogintrail(claimsIdentity);
-                if (resLoginUpdate > 0)
-                {
-                    claimsIdentity = HttpContext.User.Identity as ClaimsIdentity;
-                    str = ((ClaimsIdentity)User.Identity).FindFirst("resLoginUpdate");
-                }
+                  
             }
 
             return View();

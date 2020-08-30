@@ -179,11 +179,19 @@
             <param name="lockoutOnFailure"></param>
             <returns></returns>
         </member>
-        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationSignInManager`1.addowin_userlogintrail(System.Security.Claims.ClaimsIdentity)">
+        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationUserManager`1.addowin_userlogintrail(BDO.Base.SecurityCapsule)">
             <summary>
             addowin_userlogintrail
             </summary>
+            <param name="securityCapsule"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationUserManager`1.updateowin_userlogintrail(System.Security.Claims.ClaimsIdentity)">
+            <summary>
+            updateowin_userlogintrail
+            </summary>
             <param name="claimsIdentity"></param>
+            <param name="resLoginSeriale"></param>
             <returns></returns>
         </member>
         <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationUserManager`1.UpdateUserPasswordResetInfo(BDO.DataAccessObjects.SecurityModule.owin_userEntity,System.String)">
@@ -336,7 +344,7 @@
             </summary>
             <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password entered does not contain an upper case letter.</returns>
         </member>
-        <member name="M:CoreWebApp.IntraServices.AdditionalUserClaimsPrincipalFactory.#ctor(Microsoft.AspNetCore.Identity.UserManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+        <member name="M:CoreWebApp.IntraServices.AdditionalUserClaimsPrincipalFactory.#ctor(CoreWebApp.CustomIdentityManagers.ApplicationUserManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.AspNetCore.Http.IHttpContextAccessor)">
             <summary>
             AdditionalUserClaimsPrincipalFactory
             </summary>
