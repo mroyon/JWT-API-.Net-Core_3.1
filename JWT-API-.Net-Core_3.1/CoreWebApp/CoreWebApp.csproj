@@ -10,6 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Filters\**" />
+    <Content Remove="Filters\**" />
+    <EmbeddedResource Remove="Filters\**" />
+    <None Remove="Filters\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AspNetCore.CacheOutput" Version="1.0.11.1" />
     <PackageReference Include="AspNetCore.CacheOutput.Redis" Version="1.0.5.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
@@ -37,6 +44,7 @@
     <ProjectReference Include="..\..\CLL\CLL.csproj" />
     <ProjectReference Include="..\..\IBFO\IBFO.csproj" />
     <ProjectReference Include="..\..\IDAC\IDAC.csproj" />
+    <ProjectReference Include="..\CoreWebApplicationFilters\CoreWebApplicationFilters.csproj" />
   </ItemGroup>
 
   <ItemGroup>

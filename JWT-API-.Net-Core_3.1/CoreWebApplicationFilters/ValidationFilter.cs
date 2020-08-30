@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CoreWebApp.Filters
+namespace CoreWebApplicationFilters
 {
     public class ValidationFilter : IAsyncActionFilter
     {
@@ -21,7 +21,7 @@ namespace CoreWebApp.Filters
                 {
                     return;
                 }
-                
+
                 var errorsInModelState = context.ModelState
                     .Where(x => x.Value.Errors.Count > 0)
                     .ToDictionary(kvp => kvp.Key, kvp => kvp.Value.Errors.Select(x => x.ErrorMessage)).ToArray();

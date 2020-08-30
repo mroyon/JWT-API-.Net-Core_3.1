@@ -1,13 +1,10 @@
 ﻿using AspNetCore.CacheOutput;
 using Microsoft.AspNetCore.Mvc.Filters;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading;
-using System.Threading.Tasks;
 
-namespace CoreWebApp.Filters
+namespace CoreWebApplicationFilters
 {
     public class CacheOutputAttributeOver : CacheOutputAttribute
     {
@@ -29,5 +26,4 @@ namespace CoreWebApp.Filters
             return actionContext.HttpContext.Request.Method == HttpMethod.Get.ToString();//  base.IsCachingAllowed(actionContext, anonymousOnly);
         }
     }
- 
 }

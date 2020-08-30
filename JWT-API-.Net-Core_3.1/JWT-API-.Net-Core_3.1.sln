@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JWTApiExample", "JWTApiExam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreWebApp", "CoreWebApp\CoreWebApp.csproj", "{79C313C0-1864-4AAB-879E-C0EDC5A6CEE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebApplicationFilters", "CoreWebApplicationFilters\CoreWebApplicationFilters.csproj", "{6F423628-1E95-49AD-98E7-1BAEC89E5098}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{79C313C0-1864-4AAB-879E-C0EDC5A6CEE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79C313C0-1864-4AAB-879E-C0EDC5A6CEE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79C313C0-1864-4AAB-879E-C0EDC5A6CEE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F423628-1E95-49AD-98E7-1BAEC89E5098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F423628-1E95-49AD-98E7-1BAEC89E5098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F423628-1E95-49AD-98E7-1BAEC89E5098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F423628-1E95-49AD-98E7-1BAEC89E5098}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +98,7 @@ Global
 		{1D5CFB5F-D647-4E00-A7FB-A7A7758C5753} = {1D751942-82AC-4C85-95E5-199632AE7993}
 		{22FFCB00-0074-4A29-95BA-D5F86E8EE2BB} = {AB4D37EA-DB60-4DB4-813F-7211C62D3560}
 		{79C313C0-1864-4AAB-879E-C0EDC5A6CEE7} = {AB4D37EA-DB60-4DB4-813F-7211C62D3560}
+		{6F423628-1E95-49AD-98E7-1BAEC89E5098} = {ADE0C419-DAE0-4EF4-9F71-0ECE3C3DFA39}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {94BA19E4-5264-4524-94D5-240FE6CF6481}

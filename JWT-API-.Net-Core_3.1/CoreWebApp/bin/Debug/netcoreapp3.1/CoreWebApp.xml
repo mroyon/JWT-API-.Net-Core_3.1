@@ -88,7 +88,7 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:CoreWebApp.Controllers.HomeController.#ctor">
+        <member name="M:CoreWebApp.Controllers.HomeController.#ctor(CoreWebApp.CustomIdentityManagers.ApplicationUserManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},CoreWebApp.CustomIdentityManagers.ApplicationSignInManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Localization.IStringLocalizerFactory)">
             <summary>
             
             </summary>
@@ -122,6 +122,76 @@
             </summary>
             <param name="culture"></param>
             <param name="returnUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CoreWebApp.CustomIdentityManagers.ApplicationSignInManager`1">
+            
+        </member>
+        <member name="P:CoreWebApp.CustomIdentityManagers.ApplicationSignInManager`1.Logger">
+            <summary>
+            Logger
+            </summary>
+        </member>
+        <member name="P:CoreWebApp.CustomIdentityManagers.ApplicationSignInManager`1.UserManager">
+            <summary>
+            UserManager
+            </summary>
+        </member>
+        <member name="P:CoreWebApp.CustomIdentityManagers.ApplicationSignInManager`1.ClaimsFactory">
+            <summary>
+            ClaimsFactory
+            </summary>
+        </member>
+        <member name="P:CoreWebApp.CustomIdentityManagers.ApplicationSignInManager`1.Context">
+            <summary>
+            Context
+            </summary>
+        </member>
+        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationSignInManager`1.#ctor(CoreWebApp.CustomIdentityManagers.ApplicationUserManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory{BDO.DataAccessObjects.SecurityModule.owin_userEntity},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.Extensions.Logging.ILogger{Microsoft.AspNetCore.Identity.SignInManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity}},Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider,Microsoft.AspNetCore.Identity.IUserConfirmation{BDO.DataAccessObjects.SecurityModule.owin_userEntity})">
+            <summary>
+            ApplicationSignInManager
+            </summary>
+            <param name="userManager"></param>
+            <param name="contextAccessor"></param>
+            <param name="claimsFactory"></param>
+            <param name="optionsAccessor"></param>
+            <param name="logger"></param>
+            <param name="schemes"></param>
+            <param name="confirmation"></param>
+        </member>
+        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationSignInManager`1.PasswordSignInAsync(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            PasswordSignInAsync
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="isPersistent"></param>
+            <param name="lockoutOnFailure"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationSignInManager`1.PasswordSignInAsync(BDO.DataAccessObjects.SecurityModule.owin_userEntity,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            PasswordSignInAsync
+            </summary>
+            <param name="user"></param>
+            <param name="password"></param>
+            <param name="isPersistent"></param>
+            <param name="lockoutOnFailure"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationSignInManager`1.addowin_userlogintrail(System.Security.Claims.ClaimsIdentity)">
+            <summary>
+            addowin_userlogintrail
+            </summary>
+            <param name="claimsIdentity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationUserManager`1.UpdateUserPasswordResetInfo(BDO.DataAccessObjects.SecurityModule.owin_userEntity,System.String)">
+            <summary>
+            UpdateUserPasswordResetInfo
+            </summary>
+            <param name="user"></param>
+            <param name="code"></param>
             <returns></returns>
         </member>
         <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.DefaultError">
@@ -265,6 +335,22 @@
             Returns an <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password entered does not contain an upper case letter, which is required by the password policy.
             </summary>
             <returns>An <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/> indicating a password entered does not contain an upper case letter.</returns>
+        </member>
+        <member name="M:CoreWebApp.IntraServices.AdditionalUserClaimsPrincipalFactory.#ctor(Microsoft.AspNetCore.Identity.UserManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole},Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.Identity.IdentityOptions},Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            AdditionalUserClaimsPrincipalFactory
+            </summary>
+            <param name="userManager"></param>
+            <param name="roleManager"></param>
+            <param name="optionsAccessor"></param>
+            <param name="contextAccessor"></param>
+        </member>
+        <member name="M:CoreWebApp.IntraServices.AdditionalUserClaimsPrincipalFactory.CreateAsync(BDO.DataAccessObjects.SecurityModule.owin_userEntity)">
+            <summary>
+            CreateAsync
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
         </member>
         <member name="T:CoreWebApp.IntraServices.EmailSender">
             <summary>

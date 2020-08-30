@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AspNetCore.CacheOutput.Extensions;
 using AutoMapper;
@@ -93,15 +94,23 @@ namespace CoreWebApp
                 }
             });
 
-            
+
+            app.UseSession();
             app.UseSerilogRequestLogging();
             app.UseHttpsRedirection();
             app.UseAuthentication();
+            app.Use(async (context, next) => {
+                if (context.User != null && context.User.Identity.IsAuthenticated)
+                {
+                    // add claims here 
+                    //context.User.Claims.Append(new Claim("type-x", "value-x"));
+                }
+                await next();
+            });
+
             app.UseAuthorization();
             app.UseCacheOutput();
-            app.UseSession();
 
-            //app.UseSession();
             //Linux hosting as service
             app.UseForwardedHeaders(new ForwardedHeadersOptions
             {

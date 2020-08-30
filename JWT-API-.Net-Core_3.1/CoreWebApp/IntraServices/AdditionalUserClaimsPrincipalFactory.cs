@@ -18,6 +18,13 @@ namespace CoreWebApp.IntraServices
     public class AdditionalUserClaimsPrincipalFactory : UserClaimsPrincipalFactory<owin_userEntity, IdentityRole>
     {
         private readonly IHttpContextAccessor _contextAccessor;
+        /// <summary>
+        /// AdditionalUserClaimsPrincipalFactory
+        /// </summary>
+        /// <param name="userManager"></param>
+        /// <param name="roleManager"></param>
+        /// <param name="optionsAccessor"></param>
+        /// <param name="contextAccessor"></param>
         public AdditionalUserClaimsPrincipalFactory(
             UserManager<owin_userEntity> userManager,
             RoleManager<IdentityRole> roleManager,
@@ -28,6 +35,11 @@ namespace CoreWebApp.IntraServices
             _contextAccessor = contextAccessor;
         }
 
+        /// <summary>
+        /// CreateAsync
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public async override Task<ClaimsPrincipal> CreateAsync(owin_userEntity user)
         {
             var principal = await base.CreateAsync(user);
@@ -55,7 +67,7 @@ namespace CoreWebApp.IntraServices
             _securityCapsule.isauthenticated = true;
             // one time 
             transactioncodeGen objTranIDGen = new transactioncodeGen();
-            _securityCapsule.sessionid = _contextAccessor.HttpContext.Session.Id;
+            _securityCapsule.sessionid =  _contextAccessor.HttpContext.Session.Id;
             _securityCapsule.transid = objTranIDGen.GetRandomAlphaNumericStringForTransactionActivity("TRANS", dt);
             _securityCapsule.usertoken = _securityCapsule.transid;
 

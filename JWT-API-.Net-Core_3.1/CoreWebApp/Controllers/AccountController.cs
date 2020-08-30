@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using AppConfig.HelperClasses;
 using BDO.DataAccessObjects.ExtendedEntities;
 using BDO.DataAccessObjects.SecurityModule;
 using CoreWebApp.CustomIdentityManagers;
@@ -75,6 +76,10 @@ namespace CoreWebApp.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Login(string returnUrl)
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var vm = await BuildLoginViewModelAsync(returnUrl);
             return View(vm);
         }
@@ -110,14 +115,10 @@ namespace CoreWebApp.Controllers
 
             if (ModelState.IsValid)
             {
-                // This doesn't count login failures towards account lockout
-                // To enable password failures to trigger account lockout, set lockoutOnFailure: true
                 var result = await _signInManager.PasswordSignInAsync(model.emailaddress, model.password, model.AllowRememberLogin, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation(1, "User logged in.");
-                    var claimsIdentity = HttpContext.User.Identity as ClaimsIdentity;
-
+                    _logger.LogInformation(1, "User logged in.");                    
                     return RedirectToLocal(returnUrl);
                 }
                 if (result.IsLockedOut)
@@ -131,8 +132,6 @@ namespace CoreWebApp.Controllers
                     return View(await BuildLoginViewModelAsync(model));
                 }
             }
-
-            // If we got this far, something failed, redisplay form
             return View(await BuildLoginViewModelAsync(model));
         }
 
@@ -162,12 +161,14 @@ namespace CoreWebApp.Controllers
         public async Task<IActionResult> Logout(owin_userEntity model)
         {
             var idp = User?.FindFirst(JwtClaimTypes.IdentityProvider)?.Value;
+            ClaimsIdentity claimsIdentity = HttpContext.User.Identity as ClaimsIdentity;
+            string resLoginUpdate = ((ClaimsIdentity)User.Identity).FindFirst("resLoginUpdate").ToString();
+            await _signInManager.updateowin_userlogintrail(claimsIdentity, resLoginUpdate);
             await _signInManager.SignOutAsync();
             HttpContext.User = new ClaimsPrincipal(new ClaimsIdentity());
             var vm = new owin_userEntity
             {
                 AutomaticRedirectAfterSignOut = AccountOptions.AutomaticRedirectAfterSignOut,
-                //PostLogoutRedirectUri = logout?.PostLogoutRedirectUri,
                 ClientName = string.Empty,
                 SignOutIframeUrl = string.Empty,
                 LogoutId = model.LogoutId
@@ -226,6 +227,7 @@ namespace CoreWebApp.Controllers
                 // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=532713
                 // Send an email with this link
                 var code = await _userManager.GeneratePasswordResetTokenAsync(user);
+                var i = await _userManager.UpdateUserPasswordResetInfo(user, code);
                 var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.userid, code = code }, protocol: HttpContext.Request.Scheme);
                 await _emailSender.SendEmailAsync(
                    model.emailaddress,

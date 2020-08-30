@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ApplicationModels;
-using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace CoreWebApp.Filters
+namespace CoreWebApplicationFilters
 {
     public class SecurityHeadersAttribute : ActionFilterAttribute
     {
@@ -42,5 +40,4 @@ namespace CoreWebApp.Filters
             }
         }
     }
-   
 }

@@ -11,7 +11,8 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace CoreWebApp.Filters
+
+namespace CoreWebApplicationFilters
 {
     public class SecurityFillerAttribute : IAsyncActionFilter
     {
@@ -75,7 +76,6 @@ namespace CoreWebApp.Filters
                     ob.BaseSecurityParam.controllername = controllerName;
                     ob.BaseSecurityParam.pageurl = context.HttpContext.Request.GetDisplayUrl();
                     ob.BaseSecurityParam.ipaddress = context.HttpContext.Connection.RemoteIpAddress.ToString();
-
 
                     return ob.BaseSecurityParam;
                 }

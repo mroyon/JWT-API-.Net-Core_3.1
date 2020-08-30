@@ -91,6 +91,8 @@ namespace CoreWebApp.CustomIdentityManagers
             }
         }
 
+
+      
         public override async Task<bool> CheckPasswordAsync(owin_userEntity user, string password)
         {
             ThrowIfDisposed();
@@ -223,6 +225,32 @@ namespace CoreWebApp.CustomIdentityManagers
                 throw new NotSupportedException("StoreNotIUserPasswordStore");
             }
             return cast;
+        }
+
+        /// <summary>
+        /// UpdateUserPasswordResetInfo
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="code"></param>
+        /// <returns></returns>
+        public async Task<long> UpdateUserPasswordResetInfo(owin_userEntity user, string code)
+        {
+            ThrowIfDisposed();
+            CancellationToken cancellationToken = new CancellationToken();
+            var savedResult = await BFC.FacadeCreatorObjects.Security.owin_userpasswordresetinfoFCC.GetFacadeCreate(_contextAccessor).Add(new owin_userpasswordresetinfoEntity()
+            {
+                sessionid = user.BaseSecurityParam.sessionid,
+                userid = user.userid,
+                masteruserid = user.masteruserid,
+                sessiontoken = code,
+                username = user.username,
+                isactive = true
+            }, cancellationToken);
+
+            if (savedResult > 0 )
+                return savedResult;
+            else
+                throw new InvalidCredentialException("User Password Reset history could not added");
         }
 
     }

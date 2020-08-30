@@ -4,7 +4,6 @@ using FluentValidation.AspNetCore;
 using CoreWebApp.CustomIdentityManagers;
 using CoreWebApp.CustomStores;
 using CoreWebApp.Descripter;
-using CoreWebApp.Filters;
 using CoreWebApp.InAppResources;
 using CoreWebApp.Providers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -26,6 +25,7 @@ using System.Threading.Tasks;
 using CoreWebApp.IntraServices;
 using IdentityServer4.Services;
 using BDO.DataAccessObjects.CommonEntities;
+using CoreWebApplicationFilters;
 
 namespace CoreWebApp.Services
 {
@@ -95,7 +95,6 @@ namespace CoreWebApp.Services
             var JwtSettings = configuration.GetSection("JwtSettings").Get<JwtSettings>();
             var signingConfigurations = new JWTSigningConfigurations(JwtSettings.Secret);
             services.AddSingleton(signingConfigurations);
-
 
 
             services

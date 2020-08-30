@@ -94,3 +94,15 @@ C:\Projects\Core\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.csproj.C
 C:\Projects\Core\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.csproj.CopyComplete
 C:\Projects\Core\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.dll
 C:\Projects\Core\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.pdb
+D:\moFRomHome\JWT-API-.Net-Core_3.1\BDO\bin\Debug\netstandard2.1\BDO.deps.json
+D:\moFRomHome\JWT-API-.Net-Core_3.1\BDO\bin\Debug\netstandard2.1\BDO.dll
+D:\moFRomHome\JWT-API-.Net-Core_3.1\BDO\bin\Debug\netstandard2.1\BDO.pdb
+D:\moFRomHome\JWT-API-.Net-Core_3.1\BDO\bin\Debug\netstandard2.1\CLL.dll
+D:\moFRomHome\JWT-API-.Net-Core_3.1\BDO\bin\Debug\netstandard2.1\CLL.pdb
+D:\moFRomHome\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.csprojAssemblyReference.cache
+D:\moFRomHome\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.AssemblyInfoInputs.cache
+D:\moFRomHome\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.AssemblyInfo.cs
+D:\moFRomHome\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.csproj.CoreCompileInputs.cache
+D:\moFRomHome\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.csproj.CopyComplete
+D:\moFRomHome\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.dll
+D:\moFRomHome\JWT-API-.Net-Core_3.1\BDO\obj\Debug\netstandard2.1\BDO.pdb
