@@ -26,8 +26,10 @@ namespace IBFO.IBusinessFacadeObjects.Security.ExtendedPartial
         Task<long> UserSignInLogUpdateAsync(owin_userEntity objEntity, CancellationToken cancellationToken);
         [OperationContract]
         Task<long> UserResetPasswordAsync(owin_userEntity objEntity, CancellationToken cancellationToken);
-
-
+        [OperationContract]
+        Task<long> UserEmailAddressConfirmed(owin_userEntity objEntity, CancellationToken cancellationToken);
+        [OperationContract]
+        Task<long> UserPhoneNumberConfirmed(owin_userEntity objEntity, CancellationToken cancellationToken);
         #endregion Identity Service Implementation
 
 

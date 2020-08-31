@@ -209,6 +209,8 @@ namespace CoreWebApp.CustomIdentityManagers
             return await UpdateUserAsync(user);
         }
 
+
+
         protected virtual Task<IdentityResult> UpdatePasswordHash(owin_userEntity user, string newPassword, bool validatePassword)
             => UpdatePasswordHash(GetPasswordStore(), user, newPassword, validatePassword);
 
@@ -239,6 +241,25 @@ namespace CoreWebApp.CustomIdentityManagers
             }
             return cast;
         }
+        private IUserEmailStore<owin_userEntity> GetEmailStore(bool throwOnFail = true)
+        {
+            var cast = Store as IUserEmailStore<owin_userEntity>;
+            if (throwOnFail && cast == null)
+            {
+                throw new NotSupportedException("StoreNotIUserEmailStore");
+            }
+            return cast;
+        }
+        private IUserSecurityStampStore<owin_userEntity> GetSecurityStore()
+        {
+            var cast = Store as IUserSecurityStampStore<owin_userEntity>;
+            if (cast == null)
+            {
+                throw new NotSupportedException("StoreNotIUserSecurityStampStore");
+            }
+            return cast;
+        }
+      
 
         /// <summary>
         /// addowin_userlogintrail
@@ -335,7 +356,28 @@ namespace CoreWebApp.CustomIdentityManagers
                 throw new InvalidCredentialException("User Password Reset history could not added");
         }
 
+        /// <summary>
+        /// SetEmailAsync
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="email"></param>
+        /// <returns></returns>
+        public async Task<IdentityResult> SetEmailAsync(owin_userEntity user, string email)
+        {
+            ThrowIfDisposed();
+            var store = GetEmailStore();
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user));
+            }
 
+            await store.SetEmailAsync(user, email, CancellationToken);
+            await store.SetEmailConfirmedAsync(user, false, CancellationToken);
+            return await UpdateUserAsync(user);
+        }
 
+       
+
+     
     }
 }

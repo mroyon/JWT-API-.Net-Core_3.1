@@ -20,6 +20,10 @@ namespace IDAC.IDataAccessObjects.Security.ExtendedPartial
 
         Task<long> UserResetPasswordAsync(owin_userEntity objEntity, CancellationToken cancellationToken);
 
+        Task<long> UserEmailAddressConfirmed(owin_userEntity objEntity, CancellationToken cancellationToken);
+
+        Task<long> UserPhoneNumberConfirmed(owin_userEntity objEntity, CancellationToken cancellationToken);
+
         #endregion Identity Service Implementation
 
     }

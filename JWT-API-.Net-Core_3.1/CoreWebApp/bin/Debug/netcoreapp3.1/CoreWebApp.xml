@@ -202,6 +202,14 @@
             <param name="code"></param>
             <returns></returns>
         </member>
+        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationUserManager`1.SetEmailAsync(BDO.DataAccessObjects.SecurityModule.owin_userEntity,System.String)">
+            <summary>
+            SetEmailAsync
+            </summary>
+            <param name="user"></param>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
         <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.DefaultError">
             <summary>
             Returns the default <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/>.

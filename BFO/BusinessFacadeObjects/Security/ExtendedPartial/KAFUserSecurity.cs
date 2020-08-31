@@ -163,5 +163,37 @@ namespace BFO.BusinessFacadeObjects.Security.ExtendedPartial
                 throw exx;
             }
         }
+
+        async Task<long> IKAFUserSecurity.UserEmailAddressConfirmed(owin_userEntity objEntity, CancellationToken cancellationToken)
+        {
+            try
+            {
+                return await DataAccessFactory.CreateKAFUserSecurityDataAccess().UserEmailAddressConfirmed(objEntity, cancellationToken);
+            }
+            catch (DataException ex)
+            {
+                throw GetFacadeException(ex, SourceOfException("IKAFUserSecurity.UserEmailAddressConfirmed"));
+            }
+            catch (Exception exx)
+            {
+                throw exx;
+            }
+        }
+
+        async Task<long> IKAFUserSecurity.UserPhoneNumberConfirmed(owin_userEntity objEntity, CancellationToken cancellationToken)
+        {
+            try
+            {
+                return await DataAccessFactory.CreateKAFUserSecurityDataAccess().UserPhoneNumberConfirmed(objEntity, cancellationToken);
+            }
+            catch (DataException ex)
+            {
+                throw GetFacadeException(ex, SourceOfException("IKAFUserSecurity.UserPhoneNumberConfirmed"));
+            }
+            catch (Exception exx)
+            {
+                throw exx;
+            }
+        }
     }
 }

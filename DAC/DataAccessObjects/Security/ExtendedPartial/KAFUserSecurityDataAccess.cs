@@ -331,6 +331,81 @@ namespace DAC.Core.DataAccessObjects.Security.ExtendedPartial
             return returnValue;
         }
 
+        async Task<long> IKAFUserSecurityDataAccess.UserEmailAddressConfirmed(owin_userEntity owin_user, CancellationToken cancellationToken)
+        {
+            long returnValue = -99;
+            try
+            {
+                const string SP = "KAF_UserEmailAddressConfirmed";
+
+                using (DbCommand cmd = Database.GetStoredProcCommand(SP))
+                {
+                    owin_user = FillParameters(owin_user, cmd, Database);
+
+                    FillSequrityParameters(owin_user.BaseSecurityParam, cmd, Database);
+                    AddOutputParameter(cmd);
+                    try
+                    {
+                        IAsyncResult result = Database.BeginExecuteNonQuery(cmd, null, null);
+                        while (!result.IsCompleted)
+                        {
+                        }
+                        returnValue = Database.EndExecuteNonQuery(result);
+                        returnValue = (Int64)(cmd.Parameters["@RETURN_KEY"].Value);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw GetDataAccessException(ex, SourceOfException("Iowin_userDataAccess.UserEmailAddressConfirmed"));
+                    }
+                    cmd.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw GetDataAccessException(ex, SourceOfException("IKAFUserSecurityDataAccess.UserEmailAddressConfirmed"));
+            }
+            return returnValue;
+        }
+
+
+        async Task<long> IKAFUserSecurityDataAccess.UserPhoneNumberConfirmed(owin_userEntity owin_user, CancellationToken cancellationToken)
+        {
+            long returnValue = -99;
+            try
+            {
+                const string SP = "KAF_UserPhoneNumberConfirmed";
+            
+                using (DbCommand cmd = Database.GetStoredProcCommand(SP))
+                {
+                    owin_user = FillParameters(owin_user, cmd, Database);
+
+                    FillSequrityParameters(owin_user.BaseSecurityParam, cmd, Database);
+                    AddOutputParameter(cmd);
+                    try
+                    {
+                        IAsyncResult result = Database.BeginExecuteNonQuery(cmd, null, null);
+                        while (!result.IsCompleted)
+                        {
+                        }
+                        returnValue = Database.EndExecuteNonQuery(result);
+                        returnValue = (Int64)(cmd.Parameters["@RETURN_KEY"].Value);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw GetDataAccessException(ex, SourceOfException("Iowin_userDataAccess.UserPhoneNumberConfirmed"));
+                    }
+                    cmd.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw GetDataAccessException(ex, SourceOfException("IKAFUserSecurityDataAccess.UserPhoneNumberConfirmed"));
+            }
+            return returnValue;
+        }
+
+
+
     }
 
 }

@@ -49,7 +49,7 @@ namespace BDO.Base
             [EnumMember]
             Deleted = 3
         }
-
+        public List<string> strPerformAction { get; set; }
         public string strModelPrimaryKey { get; set; }
         public string strCommonSerachParam { get; set; }
         public string code { get; set; }

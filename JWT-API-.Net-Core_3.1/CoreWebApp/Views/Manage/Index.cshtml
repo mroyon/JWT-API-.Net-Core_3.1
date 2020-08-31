@@ -1,0 +1,49 @@
+﻿@using BDO.DataAccessObjects.SecurityModule
+@using CoreWebApp.Navigations
+@using CoreWebApp.InAppResources
+@inject CoreWebApp.Services.LocalizeService SharedLocalizer
+@model owin_userEntity
+@{
+    ViewData["Title"] = @SharedLocalizer.GetLocalizedHtmlString("PROFILE");
+    ViewData.AddActivePage(CoreWebApp.Navigations.ManageNavPages.Index);
+}
+
+<h4>@ViewData["Title"]</h4>
+@await Html.PartialAsync("_StatusMessage", Model.status)
+<div class="row">
+    <div class="col-md-6">
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="username">@SharedLocalizer.GetLocalizedHtmlString("USERNAME")</label>
+                <input asp-for="username" class="form-control" disabled />
+            </div>
+            <div class="form-group">
+                <label asp-for="emailaddress">@SharedLocalizer.GetLocalizedHtmlString("EMAIL")</label>
+                @if (Model.isemailconfirmed.GetValueOrDefault())
+                {
+                    <div class="input-group">
+                        <input asp-for="emailaddress" class="form-control" />
+                        <span class="input-group-addon" aria-hidden="true"><span class="fas fa-check-circle text-success"></span></span>
+                    </div>
+                }
+                else
+                {
+                    <input asp-for="emailaddress" class="form-control" />
+                    <button asp-action="SendVerificationEmail" class="btn btn-link">@SharedLocalizer.GetLocalizedHtmlString("SEND_VERIFICATION_EMAIL")</button>
+                }
+                <span asp-validation-for="emailaddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="mobilenumber">@SharedLocalizer.GetLocalizedHtmlString("PHONE_NUMBER")</label>
+                <input asp-for="mobilenumber" class="form-control" />
+                <span asp-validation-for="mobilenumber" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">@SharedLocalizer.GetLocalizedHtmlString("SAVE")</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

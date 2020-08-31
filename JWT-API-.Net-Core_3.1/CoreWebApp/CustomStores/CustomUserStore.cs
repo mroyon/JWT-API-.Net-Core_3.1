@@ -165,12 +165,18 @@ namespace CoreWebApp.CustomStores
 
         public Task SetEmailAsync(owin_userEntity user, string email, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task.Run(() =>
+            {
+                user.emailaddress = email;
+            });
         }
 
         public Task SetEmailConfirmedAsync(owin_userEntity user, bool confirmed, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task.Run(() =>
+            {
+                user.isemailconfirmed = confirmed;
+            });
         }
 
         public Task SetNormalizedEmailAsync(owin_userEntity user, string normalizedEmail, CancellationToken cancellationToken)
@@ -194,12 +200,18 @@ namespace CoreWebApp.CustomStores
 
         public Task SetPhoneNumberAsync(owin_userEntity user, string phoneNumber, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task.Run(() =>
+            {
+                user.mobilenumber = phoneNumber;
+            });
         }
 
         public Task SetPhoneNumberConfirmedAsync(owin_userEntity user, bool confirmed, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task.Run(() =>
+            {
+                user.ismobilenumberconfirmed = confirmed;
+            });
         }
 
         public Task SetTwoFactorEnabledAsync(owin_userEntity user, bool enabled, CancellationToken cancellationToken)
@@ -212,20 +224,37 @@ namespace CoreWebApp.CustomStores
             throw new NotImplementedException();
         }
 
-        public Task<IdentityResult> UpdateAsync(owin_userEntity user, CancellationToken cancellationToken)
+        public async Task<IdentityResult> UpdateAsync(owin_userEntity user, CancellationToken cancellationToken)
         {
-            return Task<IdentityResult>.Run(() =>
+            IdentityResult result = IdentityResult.Failed();
+            if (user.strPerformAction.Contains("UpdateEmailAddress"))
             {
-                IdentityResult result = IdentityResult.Failed();
-                //bool updateResult = _dataAccess.Update(user);
-                bool updateResult = true;
-                if (updateResult)
+                long i = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor).UserEmailAddressConfirmed(user, cancellationToken);
+                if (i > 0)
                 {
                     result = IdentityResult.Success;
                 }
+            }
+            if (user.strPerformAction.Contains("ConfirmEmail"))
+            {            
+                long i = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor).UserEmailAddressConfirmed(user, cancellationToken);
+                if (i>0)
+                {
+                    result = IdentityResult.Success;
+                }
+            }
+            if (user.strPerformAction.Contains("ConfirmMobile"))
+            {
+                long i = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor).UserPhoneNumberConfirmed(user, cancellationToken);
+                if (i > 0)
+                {
+                    result = IdentityResult.Success;
+                }
+            }
+            else
+            { }
 
-                return result;
-            });
+            return result;
         }
 
 
