@@ -174,6 +174,7 @@ namespace BDO.DataAccessObjects.SecurityModule
         
         [DataMember]
         [MaxLength(500)]
+        [DataType(DataType.Password)]
         [Display(Name = "password", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
         [Required(ErrorMessageResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user), ErrorMessageResourceName = "passwordRequired")]
         public string password
@@ -184,6 +185,8 @@ namespace BDO.DataAccessObjects.SecurityModule
         protected string _confirmpassword;
         [DataMember]
         [MaxLength(500)]
+        [DataType(DataType.Password)]
+        [Compare("newpassword", ErrorMessage = "CONFIRM_PASSWORD_NOT_MATCHING")]
         [Display(Name = "password", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
         [Required(ErrorMessageResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user), ErrorMessageResourceName = "passwordRequired")]
         public string confirmpassword
@@ -192,10 +195,23 @@ namespace BDO.DataAccessObjects.SecurityModule
             set { _confirmpassword = value; this.OnChnaged(); }
         }
 
+        protected string _newpassword;
         [DataMember]
         [MaxLength(500)]
+        [DataType(DataType.Password)]
+        [Display(Name = "password", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
+        [Required(ErrorMessageResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user), ErrorMessageResourceName = "passwordRequired")]
+        public string newpassword
+        {
+            get { return _newpassword; }
+            set { _newpassword = value; this.OnChnaged(); }
+        }
+
+        [DataMember]
+        [MaxLength(500)]
+        [DataType(DataType.Password)]
         [Display(Name = "passwordsalt", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
-        [Required(ErrorMessageResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user), ErrorMessageResourceName = "passwordsaltRequired")]
+        [Required(ErrorMessageResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user), ErrorMessageResourceName = "passwordRequired")]
         public string passwordsalt
         {
             get { return _passwordsalt; }
@@ -204,6 +220,7 @@ namespace BDO.DataAccessObjects.SecurityModule
         
         [DataMember]
         [MaxLength(500)]
+        [DataType(DataType.Password)]
         [Display(Name = "passwordkey", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
         [Required(ErrorMessageResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user), ErrorMessageResourceName = "passwordkeyRequired")]
         public string passwordkey
@@ -214,6 +231,7 @@ namespace BDO.DataAccessObjects.SecurityModule
         
         [DataMember]
         [MaxLength(500)]
+        [DataType(DataType.Password)]
         [Display(Name = "passwordvector", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
         [Required(ErrorMessageResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user), ErrorMessageResourceName = "passwordvectorRequired")]
         public string passwordvector
@@ -224,6 +242,7 @@ namespace BDO.DataAccessObjects.SecurityModule
         
         [DataMember]
         [MaxLength(16)]
+        [DataType(DataType.Password)]
         [Display(Name = "mobilepin", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
         public string mobilepin
         {

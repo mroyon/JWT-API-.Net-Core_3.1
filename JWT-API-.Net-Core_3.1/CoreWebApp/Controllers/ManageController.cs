@@ -88,7 +88,6 @@ namespace CoreWebApp.Controllers
             {
                 return View(model);
             }
-           
             
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
@@ -160,7 +159,6 @@ namespace CoreWebApp.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-
         [HttpGet]
         public async Task<IActionResult> ChangePassword()
         {
@@ -184,6 +182,17 @@ namespace CoreWebApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ChangePassword(owin_userEntity model)
         {
+            ModelState.Remove("applicationid");
+            ModelState.Remove("masteruserid");
+            ModelState.Remove("username");
+            ModelState.Remove("emailaddress");
+            ModelState.Remove("loweredusername");
+            ModelState.Remove("isanonymous");
+            ModelState.Remove("masprivatekey");
+            ModelState.Remove("maspublickey");
+            ModelState.Remove("passwordkey");
+            ModelState.Remove("passwordvector");
+            ModelState.Remove("passwordsalt");
             if (!ModelState.IsValid)
             {
                 return View(model);

@@ -148,9 +148,9 @@ namespace CoreWebApp.CustomStores
             throw new NotImplementedException();
         }
 
-        public Task<bool> HasPasswordAsync(owin_userEntity user, CancellationToken cancellationToken)
+        public async Task<bool> HasPasswordAsync(owin_userEntity user, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public Task<bool> IsInRoleAsync(owin_userEntity user, string roleName, CancellationToken cancellationToken)
@@ -236,7 +236,8 @@ namespace CoreWebApp.CustomStores
                 }
             }
             if (user.strPerformAction.Contains("ConfirmEmail"))
-            {            
+            {
+                user.emailaddress = null;
                 long i = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor).UserEmailAddressConfirmed(user, cancellationToken);
                 if (i>0)
                 {

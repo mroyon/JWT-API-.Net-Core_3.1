@@ -107,6 +107,7 @@ namespace CoreWebApp.Controllers
             ModelState.Remove("loweredusername");
             ModelState.Remove("applicationid");
             ModelState.Remove("masteruserid");
+            ModelState.Remove("newpassword");
             ModelState.Remove("username");
             ModelState.Remove("isanonymous");
             ModelState.Remove("masprivatekey");
@@ -211,6 +212,7 @@ namespace CoreWebApp.Controllers
             ModelState.Remove("masprivatekey");
             ModelState.Remove("maspublickey");
             ModelState.Remove("confirmpassword");
+            ModelState.Remove("newpassword");
             ModelState.Remove("passwordsalt");
 
             if (ModelState.IsValid)
