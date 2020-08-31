@@ -184,7 +184,6 @@ namespace DAC.Core.DataAccessObjects.Security.ExtendedPartial
         {
             owin_userEntity returnObject = new owin_userEntity();
             IList<owin_userEntity> itemList = new List<owin_userEntity>();
-            EncryptionHelper objEnc2 = new EncryptionHelper();
             try
             {
                 using (DbCommand cmd = Database.GetStoredProcCommand("KAF_OwinUserByUserName"))
@@ -284,6 +283,53 @@ namespace DAC.Core.DataAccessObjects.Security.ExtendedPartial
             return returnValue;
         }
 
+        async Task<long> IKAFUserSecurityDataAccess.UserResetPasswordAsync(owin_userEntity owin_user, CancellationToken cancellationToken)
+        {
+            long returnValue = -99;
+            try
+            {
+                const string SP = "KAF_Owin_UserPasswordChangeWithCode";
+
+                EncryptionHelper objenc = new EncryptionHelper();
+                var salt = objenc.GenerateRandomCryptographicKey(128);
+                HashWithSaltResult ob1 = objenc.EncodePassword(owin_user.password, salt);
+                owin_user.password = ob1.Digest;
+                owin_user.passwordsalt = ob1.Salt;
+                owin_user.passwordkey = objenc.GenerateRandomCryptographicKey(24);
+                owin_user.passwordvector = objenc.GenerateRandomCryptographicKey(32);
+
+                using (DbCommand cmd = Database.GetStoredProcCommand(SP))
+                {
+                    owin_user.lastlogindate = DateTime.Now;
+                    owin_user = FillParameters(owin_user, cmd, Database);
+
+                    Database.AddInParameter(cmd, "@SessionID", DbType.String, owin_user.BaseSecurityParam.sessionid);
+                    Database.AddInParameter(cmd, "@SessionToken", DbType.String, owin_user.code);
+
+                    FillSequrityParameters(owin_user.BaseSecurityParam, cmd, Database);
+                    AddOutputParameter(cmd);
+                    try
+                    {
+                        IAsyncResult result = Database.BeginExecuteNonQuery(cmd, null, null);
+                        while (!result.IsCompleted)
+                        {
+                        }
+                        returnValue = Database.EndExecuteNonQuery(result);
+                        returnValue = (Int64)(cmd.Parameters["@RETURN_KEY"].Value);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw GetDataAccessException(ex, SourceOfException("Iowin_userDataAccess.UserResetPasswordAsync"));
+                    }
+                    cmd.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw GetDataAccessException(ex, SourceOfException("IKAFUserSecurityDataAccess.UserResetPasswordAsync"));
+            }
+            return returnValue;
+        }
 
     }
 

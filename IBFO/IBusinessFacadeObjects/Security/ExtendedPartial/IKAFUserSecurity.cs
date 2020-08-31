@@ -24,7 +24,8 @@ namespace IBFO.IBusinessFacadeObjects.Security.ExtendedPartial
         Task<owin_userEntity> UserSignInAsync(owin_userEntity objEntity, CancellationToken cancellationToken);
         [OperationContract]
         Task<long> UserSignInLogUpdateAsync(owin_userEntity objEntity, CancellationToken cancellationToken);
-
+        [OperationContract]
+        Task<long> UserResetPasswordAsync(owin_userEntity objEntity, CancellationToken cancellationToken);
 
 
         #endregion Identity Service Implementation

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using AppConfig.EncryptionHandler;
 using AppConfig.HelperClasses;
 using BDO.DataAccessObjects.ExtendedEntities;
 using BDO.DataAccessObjects.SecurityModule;
@@ -25,7 +26,7 @@ namespace CoreWebApp.Controllers
         private readonly ApplicationUserManager<owin_userEntity> _userManager;
         private readonly ApplicationSignInManager<owin_userEntity> _signInManager;
         private readonly IEmailSender _emailSender;
-        private readonly ILogger _logger;
+        private readonly ILogger<AccountController> _logger;
         private readonly IStringLocalizer _sharedLocalizer;
         private readonly IAuthenticationSchemeProvider _schemeProvider;
 
@@ -118,7 +119,7 @@ namespace CoreWebApp.Controllers
                 var result = await _signInManager.PasswordSignInAsync(model.emailaddress, model.password, model.AllowRememberLogin, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation(1, "User logged in.");                    
+                    _logger.LogInformation(1, "User logged in.");
                     return RedirectToLocal(returnUrl);
                 }
                 if (result.IsLockedOut)
@@ -215,18 +216,26 @@ namespace CoreWebApp.Controllers
             if (ModelState.IsValid)
             {
                 var user = await _userManager.FindByEmailAsync(model.emailaddress);
-                // TODO add this is all users need to be validated
-                // if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
                 if (user == null)
                 {
                     // Don't reveal that the user does not exist or is not confirmed
                     return View("ForgotPasswordConfirmation");
                 }
-
-                // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=532713
-                // Send an email with this link
                 var code = await _userManager.GeneratePasswordResetTokenAsync(user);
-                var i = await _userManager.UpdateUserPasswordResetInfo(user, code);
+
+                model.username = user.username;
+                model.userid = user.userid;
+                model.masteruserid = user.masteruserid;
+                if (model.BaseSecurityParam != null)
+                {
+                    model.BaseSecurityParam.username = user.username;
+                    model.BaseSecurityParam.createdby = model.BaseSecurityParam.updatedby = user.masteruserid;
+                    model.BaseSecurityParam.createdbyusername = model.BaseSecurityParam.updatedbyusername = user.username;
+                    model.BaseSecurityParam.createddate = model.BaseSecurityParam.updateddate= DateTime.Now;
+                }
+
+                var i = await _userManager.UpdateUserPasswordResetInfo(model, code);
+
                 var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.userid, code = code }, protocol: HttpContext.Request.Scheme);
                 await _emailSender.SendEmailAsync(
                    model.emailaddress,
@@ -235,8 +244,6 @@ namespace CoreWebApp.Controllers
 
                 return View("ForgotPasswordConfirmation");
             }
-
-            // If we got this far, something failed, redisplay form
             return View(model);
         }
 
@@ -293,7 +300,17 @@ namespace CoreWebApp.Controllers
                 // Don't reveal that the user does not exist
                 return RedirectToAction(nameof(AccountController.ResetPasswordConfirmation), "Account");
             }
-            var result = await _userManager.ResetPasswordAsync(user, model.code, model.password);
+            model.username = user.username;
+            model.userid = user.userid;
+            model.masteruserid = user.masteruserid;
+            if (model.BaseSecurityParam != null)
+            {
+                model.BaseSecurityParam.username = user.username;
+                model.BaseSecurityParam.createdby = model.BaseSecurityParam.updatedby = user.masteruserid;
+                model.BaseSecurityParam.createdbyusername = model.BaseSecurityParam.updatedbyusername = user.username;
+                model.BaseSecurityParam.createddate = model.BaseSecurityParam.updateddate = DateTime.Now;
+            }
+            var result = await _userManager.ResetPasswordAsync(model, model.code, model.password);
             if (result.Succeeded)
             {
                 return RedirectToAction(nameof(AccountController.ResetPasswordConfirmation), "Account");

@@ -2366,9 +2366,6 @@ D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\n
 D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.csproj.GenerateResource.cache
 D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.AssemblyInfoInputs.cache
 D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.AssemblyInfo.cs
-D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.csproj.CoreCompileInputs.cache
-D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.MvcApplicationPartsAssemblyInfo.cs
-D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.MvcApplicationPartsAssemblyInfo.cache
 D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.RazorAssemblyInfo.cache
 D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.RazorAssemblyInfo.cs
 D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\ar-KW\CoreWebApp.resources.dll
@@ -2400,3 +2397,14 @@ D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\n
 D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.dll
 D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.pdb
 D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.genruntimeconfig.cache
+D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\bin\Debug\netcoreapp3.1\Serilog.Enrichers.Environment.dll
+D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\bin\Debug\netcoreapp3.1\Serilog.Enrichers.Thread.dll
+D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\bin\Debug\netcoreapp3.1\Serilog.Sinks.Async.dll
+D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\bin\Debug\netcoreapp3.1\Serilog.Sinks.MongoDB.dll
+D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\bin\Debug\netcoreapp3.1\Serilog.Sinks.PeriodicBatching.dll
+D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.csproj.CoreCompileInputs.cache
+D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.MvcApplicationPartsAssemblyInfo.cs
+D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\CoreWebApp.MvcApplicationPartsAssemblyInfo.cache

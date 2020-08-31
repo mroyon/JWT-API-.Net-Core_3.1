@@ -175,7 +175,10 @@ namespace CoreWebApp.CustomStores
 
         public Task SetNormalizedEmailAsync(owin_userEntity user, string normalizedEmail, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task.Run(() =>
+            {
+                user.emailaddress = normalizedEmail;
+            });
         }
 
         public async Task SetNormalizedUserNameAsync(owin_userEntity user, string normalizedName, CancellationToken cancellationToken)
@@ -185,8 +188,7 @@ namespace CoreWebApp.CustomStores
 
         public async Task SetPasswordHashAsync(owin_userEntity user, string passwordHash, CancellationToken cancellationToken)
         {
-            //IMPLEMENT RESET PASS            
-            throw new NotImplementedException();
+            var longVal = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor).UserResetPasswordAsync(user, cancellationToken);
         }
 
 
@@ -212,7 +214,18 @@ namespace CoreWebApp.CustomStores
 
         public Task<IdentityResult> UpdateAsync(owin_userEntity user, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task<IdentityResult>.Run(() =>
+            {
+                IdentityResult result = IdentityResult.Failed();
+                //bool updateResult = _dataAccess.Update(user);
+                bool updateResult = true;
+                if (updateResult)
+                {
+                    result = IdentityResult.Success;
+                }
+
+                return result;
+            });
         }
 
 

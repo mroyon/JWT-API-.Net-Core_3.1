@@ -93,7 +93,7 @@ namespace CoreWebApp.CustomIdentityManagers
         }
 
 
-      
+
         public override async Task<bool> CheckPasswordAsync(owin_userEntity user, string password)
         {
             ThrowIfDisposed();
@@ -177,6 +177,7 @@ namespace CoreWebApp.CustomIdentityManagers
 
         public override async Task<IdentityResult> ResetPasswordAsync(owin_userEntity user, string token, string newPassword)
         {
+            CancellationToken cancellationToken = new CancellationToken();
             ThrowIfDisposed();
             if (user == null)
             {
@@ -188,6 +189,17 @@ namespace CoreWebApp.CustomIdentityManagers
             {
                 return IdentityResult.Failed(ErrorDescriber.InvalidToken());
             }
+            var alist = await BFC.FacadeCreatorObjects.Security.owin_userpasswordresetinfoFCC.GetFacadeCreate(_contextAccessor).GetAll(new owin_userpasswordresetinfoEntity()
+            {
+                userid = user.userid,
+                sessiontoken = user.code,
+                isactive = true
+            }, cancellationToken);
+            if (alist == null || alist.Count <= 0)
+            {
+                return IdentityResult.Failed(ErrorDescriber.RecoveryCodeRedemptionFailed());
+            }
+
 
             var result = await UpdatePasswordHash(user, newPassword, validatePassword: true);
             if (!result.Succeeded)
@@ -313,39 +325,17 @@ namespace CoreWebApp.CustomIdentityManagers
                 masteruserid = user.masteruserid,
                 sessiontoken = code,
                 username = user.username,
-                isactive = true
+                isactive = true,
+                BaseSecurityParam = user.BaseSecurityParam
             }, cancellationToken);
 
-            if (savedResult > 0 )
+            if (savedResult > 0)
                 return savedResult;
             else
                 throw new InvalidCredentialException("User Password Reset history could not added");
         }
 
-        /// <summary>
-        /// GetClaimsAsync
-        /// </summary>
-        /// <param name="user"></param>
-        /// <returns></returns>
-        //public override async Task<IList<Claim>> GetClaimsAsync(owin_userEntity user)
-        //{
-        //    ThrowIfDisposed();
-        //    var claimStore = GetClaimStore();
-        //    if (user == null)
-        //    {
-        //        throw new ArgumentNullException(nameof(user));
-        //    }
-        //    return await claimStore.GetClaimsAsync(user, CancellationToken);
-        //}
-        //private IUserClaimStore<owin_userEntity> GetClaimStore()
-        //{
-        //    var cast = Store as IUserClaimStore<owin_userEntity>;
-        //    if (cast == null)
-        //    {
-        //        throw new NotSupportedException("StoreNotIUserClaimStore");
-        //    }
-        //    return cast;
-        //}
+
 
     }
 }

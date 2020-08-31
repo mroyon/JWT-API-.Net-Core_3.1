@@ -147,5 +147,21 @@ namespace BFO.BusinessFacadeObjects.Security.ExtendedPartial
                 throw exx;
             }
         }
+
+        async Task<long> IKAFUserSecurity.UserResetPasswordAsync(owin_userEntity objEntity, CancellationToken cancellationToken)
+        {
+            try
+            {
+                return await DataAccessFactory.CreateKAFUserSecurityDataAccess().UserResetPasswordAsync(objEntity, cancellationToken);
+            }
+            catch (DataException ex)
+            {
+                throw GetFacadeException(ex, SourceOfException("IKAFUserSecurity.UserResetPasswordAsync"));
+            }
+            catch (Exception exx)
+            {
+                throw exx;
+            }
+        }
     }
 }
