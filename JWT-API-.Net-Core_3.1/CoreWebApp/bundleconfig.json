@@ -27,7 +27,9 @@
     "outputFileName": "wwwroot/css/vendor.min.css",
     "inputFiles": [
       "node_modules/bootstrap/dist/css/bootstrap.min.css",
-      "node_modules/sweetalert2/dist/sweetalert2.min.css"
+      "node_modules/sweetalert2/dist/sweetalert2.min.css",
+      "node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css",
+      "node_modules/jquery-confirm/dist/jquery-confirm.min.css"
     ],
     "minify": { "enabled": true }
   },
@@ -37,7 +39,8 @@
     "inputFiles": [
       "node_modules/jquery/dist/jquery.min.js",
       "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "node_modules/sweetalert2/dist/sweetalert2.all.min.js"
+      "node_modules/sweetalert2/dist/sweetalert2.all.min.js",
+      "node_modules/jquery-confirm/dist/jquery-confirm.min.js"
     ],
     "minify": {
       "enabled": true,
@@ -53,6 +56,19 @@
       "node_modules/jquery-validation/dist/additional-methods.min.js",
       "node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
       "node_modules/jquery-ajax-unobtrusive/dist/jquery.unobtrusive-ajax.min.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  // Vendor datatables JS
+  {
+    "outputFileName": "wwwroot/js/vendor-datatables.min.js",
+    "inputFiles": [
+      "node_modules/datatables.net/js/jquery.dataTables.min.js",
+      "node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"
     ],
     "minify": {
       "enabled": true,

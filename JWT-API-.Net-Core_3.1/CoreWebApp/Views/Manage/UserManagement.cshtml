@@ -1,0 +1,185 @@
+﻿@using BDO.DataAccessObjects.SecurityModule
+@using CoreWebApp.Navigations
+@using CoreWebApp.InAppResources
+@inject CoreWebApp.Services.LocalizeService SharedLocalizer
+@model owin_userEntity
+@{
+    ViewData["Title"] = @SharedLocalizer.GetLocalizedHtmlString("USER_MANAGEMENT");
+    ViewData.AddActivePage(CoreWebApp.Navigations.ManageNavPages.UserManagement);
+}
+
+<h4>@ViewData["Title"]</h4>
+@await Html.PartialAsync("_StatusMessage", Model.status)
+<div class="row">
+    <div class="col-md-6">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <button class="btn btn-link" id="openAddNewUser" >@SharedLocalizer.GetLocalizedHtmlString("ADD-NEW-USER")</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <table id="example" class="table table-striped table-bordered dt-responsive nowrap" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>UserId</th>
+                    <th>UserName</th>
+                    <th>EmailAddress</th>
+                    <th>MobileNumber</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                    <th>Misc Actions</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<div id="modal-container-common" class="modal fade hidden-print" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" style="width:90%!important">
+        <div class="modal-content" id="modalcommon">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id="samebtn" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @await Html.PartialAsync("_DatatablesScriptsPartial")
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+
+    <script>
+
+
+        $(document).ready(function ()
+        {
+            $('body').on('click', '#samebtn', function (event) {
+                try {
+                    $.alert({
+                        title: "hello",
+                        content: "hello",
+                        type: 'red'
+                    });
+
+                } catch (e) {
+                    $.alert({
+                        title: "hello",
+                        content: e.message,
+                        type: 'red'
+                    });
+                }
+            });
+
+            $('body').on('click', '#openAddNewUser', function (event) {
+                try {
+                    $('#modal-container-common').modal({ backdrop: 'static', keyboard: false });
+
+                } catch (e) {
+                    $.alert({
+                        title: "hello",
+                        content: e.message,
+                        type: 'red'
+                    });
+                }
+            });
+
+            $("#example").DataTable({
+                "destroy": true,
+                "processing": true, // for show progress bar
+                "serverSide": true, // for process server side
+                "filter": true, // this is for disable filter (search box)
+                "orderMulti": false, // for disable multiple column at once
+                "responsive": true,
+                "ajax": {
+                    "url": "/Manage/LoadUserData",
+                    "type": "POST",
+                    "datatype": "json"
+                },
+                "columnDefs":
+                [{
+                    "targets": [0],
+                    "visible": false,
+                    "searchable": false
+                    }],
+                "language":
+                {
+                    "processing": "<div class='overlay custom-loader-background'><i class='fa fa-cog fa-spin custom-loader-color'></i></div>"
+                },
+                "columns": [
+                    { "data": "userid", "name": "userid", "autoWidth": true },
+                    { "data": "username", "name": "username", "autoWidth": true },
+                    { "data": "emailaddress", "name": "emailaddress", "autoWidth": true },
+                    { "data": "mobilenumber", "name": "mobilenumber", "autoWidth": true },
+                    {
+                        "render": function (data, type, full, meta)
+                        { return '<a class="btn btn-info" href="/Manage/EditUser/' + full.userid + '">Edit</a>'; }
+                    },
+                    {
+                        data: null, render: function (data, type, row)
+                        {
+                            return "<a href='#' class='btn btn-danger' onclick=DeleteData('" + row.userid + "'); >Delete</a>";
+                        }
+                    },
+                    {
+                        data: null, render: function (data, type, row) {
+                            return "<a href='#' class='btn btn-danger' onclick=DeleteData('" + row.userid + "'); >Other Actions</a>";
+                        }
+                    },
+                ],
+                "drawCallback": function (settings) {
+                    if (Math.ceil((this.fnSettings().fnRecordsDisplay()) / this.fnSettings()._iDisplayLength) > 1) {
+                        $('#GenGallaryCategoryDt_paginate').css("display", "block");
+                    } else {
+                        $('#GenGallaryCategoryDt_paginate').css("display", "none");
+                    }
+
+                }
+
+            });
+        });
+
+        function DeleteData(CustomerID)
+        {
+            if (confirm("Are you sure you want to delete ...?"))
+            {
+                Delete(CustomerID);
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+        function Delete(CustomerID)
+        {
+            var url = '@Url.Content("~/")' + "DemoGrid/Delete";
+            $.post(url, { ID: CustomerID }, function (data)
+            {
+                if (data)
+                {
+                    oTable = $('#example').DataTable();
+                    oTable.draw();
+                }
+                else
+                {
+                    alert("Something Went Wrong!");
+                }
+            });
+    }
+
+    </script>
+}

@@ -110,6 +110,18 @@
             Shows the error page
             </summary>
         </member>
+        <member name="M:CoreWebApp.Controllers.ManageController.#ctor(CoreWebApp.CustomIdentityManagers.ApplicationUserManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},CoreWebApp.CustomIdentityManagers.ApplicationSignInManager{BDO.DataAccessObjects.SecurityModule.owin_userEntity},CoreWebApp.IntraServices.IEmailSender,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Localization.IStringLocalizerFactory,Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            ManageController
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+            <param name="emailSender"></param>
+            <param name="loggerFactory"></param>
+            <param name="factory"></param>
+            <param name="schemeProvider"></param>
+            <param name="httpContextAccessor"></param>
+        </member>
         <member name="M:CoreWebApp.Controllers.ManageController.PersonalData">
             <summary>
             PersonalData
@@ -133,6 +145,18 @@
             DeletePersonalData
             </summary>
             <param name="deletePersonalDataViewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.ManageController.UserManagement">
+            <summary>
+            DeletePersonalData
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.ManageController.LoadUserData">
+            <summary>
+            
+            </summary>
             <returns></returns>
         </member>
         <member name="M:CoreWebApp.Controllers.SetLanguageController.Index">

@@ -16,6 +16,8 @@ using System.Text;
 using Newtonsoft.Json;
 using System.Linq;
 using CoreWebApp.Models;
+using AppConfig.ConfigDAAC;
+using Microsoft.AspNetCore.Http;
 
 namespace CoreWebApp.Controllers
 {
@@ -29,19 +31,33 @@ namespace CoreWebApp.Controllers
         private readonly ILogger<ManageController> _logger;
         private readonly IStringLocalizer _sharedLocalizer;
         private readonly IAuthenticationSchemeProvider _schemeProvider;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
+
+        /// <summary>
+        /// ManageController
+        /// </summary>
+        /// <param name="userManager"></param>
+        /// <param name="signInManager"></param>
+        /// <param name="emailSender"></param>
+        /// <param name="loggerFactory"></param>
+        /// <param name="factory"></param>
+        /// <param name="schemeProvider"></param>
+        /// <param name="httpContextAccessor"></param>
         public ManageController(ApplicationUserManager<owin_userEntity> userManager,
             ApplicationSignInManager<owin_userEntity> signInManager,
             IEmailSender emailSender,
             ILoggerFactory loggerFactory,
             IStringLocalizerFactory factory,
-            IAuthenticationSchemeProvider schemeProvider)
+            IAuthenticationSchemeProvider schemeProvider,
+            IHttpContextAccessor httpContextAccessor)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
             _logger = loggerFactory.CreateLogger<ManageController>();
             _schemeProvider = schemeProvider;
+            _httpContextAccessor = httpContextAccessor;
 
             var type = typeof(SharedResource);
             var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
@@ -373,6 +389,83 @@ namespace CoreWebApp.Controllers
 
             return Redirect("~/");
         }
+
+        /// <summary>
+        /// DeletePersonalData
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<IActionResult> UserManagement()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound(_sharedLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
+            }
+            return View(user);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public async Task<IActionResult> LoadUserData()
+        {
+            try
+            {
+                var draw = HttpContext.Request.Form["draw"].FirstOrDefault();
+                // Skiping number of Rows count
+                var start = Request.Form["start"].FirstOrDefault();
+                // Paging Length 10,20
+                var length = Request.Form["length"].FirstOrDefault();
+                // Sort Column Name
+                var sortColumn = Request.Form["columns[" + Request.Form["order[0][column]"].FirstOrDefault() + "][name]"].FirstOrDefault();
+                // Sort Column Direction ( asc ,desc)
+                var sortColumnDirection = Request.Form["order[0][dir]"].FirstOrDefault();
+                // Search Value from (Search box)
+                var searchValue = Request.Form["search[value]"].FirstOrDefault();
+
+                //Paging Size (10,20,50,100)
+                int pageSize = length != null ? Convert.ToInt32(length) : 0;
+                int skip = start != null ? Convert.ToInt32(start) : 0;
+                int recordsTotal = 0;
+
+                // Getting all Customer data
+                var UserData = await BFC.FacadeCreatorObjects.Security.owin_userFCC.GetFacadeCreate(_httpContextAccessor).GetAll(new owin_userEntity() { }, new System.Threading.CancellationToken());
+                var tut = (from t in UserData
+                           select new
+                           {
+                               t.userid,
+                               t.username,
+                               t.emailaddress,
+                               t.mobilenumber
+                           }).ToList();
+                //Sorting
+                //if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
+                //{
+                //    customerData = customerData.OrderBy(sortColumn + " " + sortColumnDirection);
+                //}
+                ////Search
+                //if (!string.IsNullOrEmpty(searchValue))
+                //{
+                //    customerData = customerData.Where(m => m.Name == searchValue || m.Phoneno == searchValue || m.City == searchValue);
+                //}
+
+                //total number of rows count 
+                recordsTotal = UserData.Count();
+                //Paging 
+                var data = UserData.Skip(skip).Take(pageSize).ToList();
+                //Returning Json Data
+                return Json(new { draw = draw, recordsFiltered = recordsTotal, recordsTotal = recordsTotal, data = data });
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
+
 
         private void AddErrors(IdentityResult result)
         {

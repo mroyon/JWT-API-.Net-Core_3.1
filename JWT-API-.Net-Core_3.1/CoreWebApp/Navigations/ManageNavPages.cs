@@ -12,11 +12,7 @@ namespace CoreWebApp.Navigations
 
         public static string ChangePassword => "ChangePassword";
 
-        public static string ExternalLogins => "ExternalLogins";
-
-        public static string TwoFactorAuthentication => "TwoFactorAuthentication";
-
-        public static string Fido2Mfa => "Fido2Mfa";
+        public static string UserManagement => "UserManagement";
 
         public static string PersonalData => "PersonalData";
 
@@ -28,9 +24,7 @@ namespace CoreWebApp.Navigations
 
         public static string ChangePasswordNavClass(ViewContext viewContext) => PageNavClass(viewContext, ChangePassword);
 
-        public static string ExternalLoginsNavClass(ViewContext viewContext) => PageNavClass(viewContext, ExternalLogins);
-
-        public static string TwoFactorAuthenticationNavClass(ViewContext viewContext) => PageNavClass(viewContext, TwoFactorAuthentication);
+        public static string UserManagementClass(ViewContext viewContext) => PageNavClass(viewContext, UserManagement);
 
         public static string PersonalDataNavClass(ViewContext viewContext) => PageNavClass(viewContext, PersonalData);
 
