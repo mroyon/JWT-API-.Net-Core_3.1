@@ -1,5 +1,7 @@
 ﻿using BDO.Base;
 using BDO.DataAccessObjects.SecurityModule;
+using CoreWebApp.CustomStores;
+using CoreWebApp.IntraServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
@@ -41,7 +43,8 @@ namespace CoreWebApp.CustomIdentityManagers
             }
             Store = store;
             Options = optionsAccessor?.Value ?? new IdentityOptions();
-            PasswordHasher = passwordHasher;
+
+            PasswordHasher =  passwordHasher;
             KeyNormalizer = keyNormalizer;
             ErrorDescriber = errors;
             Logger = logger;
@@ -232,33 +235,7 @@ namespace CoreWebApp.CustomIdentityManagers
             return IdentityResult.Success;
         }
 
-        private IUserPasswordStore<owin_userEntity> GetPasswordStore()
-        {
-            var cast = Store as IUserPasswordStore<owin_userEntity>;
-            if (cast == null)
-            {
-                throw new NotSupportedException("StoreNotIUserPasswordStore");
-            }
-            return cast;
-        }
-        private IUserEmailStore<owin_userEntity> GetEmailStore(bool throwOnFail = true)
-        {
-            var cast = Store as IUserEmailStore<owin_userEntity>;
-            if (throwOnFail && cast == null)
-            {
-                throw new NotSupportedException("StoreNotIUserEmailStore");
-            }
-            return cast;
-        }
-        private IUserSecurityStampStore<owin_userEntity> GetSecurityStore()
-        {
-            var cast = Store as IUserSecurityStampStore<owin_userEntity>;
-            if (cast == null)
-            {
-                throw new NotSupportedException("StoreNotIUserSecurityStampStore");
-            }
-            return cast;
-        }
+      
       
 
         /// <summary>
@@ -376,8 +353,77 @@ namespace CoreWebApp.CustomIdentityManagers
             return await UpdateUserAsync(user);
         }
 
-       
+        /// <summary>
+        /// ChangePasswordAsync
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="currentPassword"></param>
+        /// <param name="newPassword"></param>
+        /// <returns></returns>
+        public async Task<IdentityResult> ChangePasswordAsync(owin_userEntity user, string currentPassword, string newPassword)
+        {
+            ThrowIfDisposed();
+            var passwordStore = GetPasswordStore();
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user));
+            }
 
-     
+
+            if (await VerifyPasswordAsync(passwordStore, user, currentPassword) != PasswordVerificationResult.Failed)
+            {
+                var result = await UpdatePasswordHash(passwordStore, user, newPassword);
+                if (!result.Succeeded)
+                {
+                    return result;
+                }
+                return await UpdateUserAsync(user);
+            }
+            Logger.LogWarning(2, "Change password failed for user {userId}.", await GetUserIdAsync(user));
+            return IdentityResult.Failed(ErrorDescriber.PasswordMismatch());
+        }
+
+
+
+        protected virtual async Task<PasswordVerificationResult> VerifyPasswordAsync(IUserPasswordStore<owin_userEntity> store, owin_userEntity user, string password)
+        {
+            var hash = await store.GetPasswordHashAsync(user, CancellationToken);
+            if (hash == null)
+            {
+                return PasswordVerificationResult.Failed;
+            }
+
+            return PasswordHasher.VerifyHashedPassword(user, hash, password);
+        }
+
+
+
+        private IUserPasswordStore<owin_userEntity> GetPasswordStore()
+        {
+            var cast = Store as CustomUserStore;
+            if (cast == null)
+            {
+                throw new NotSupportedException("StoreNotIUserPasswordStore");
+            }
+            return cast;
+        }
+        private IUserEmailStore<owin_userEntity> GetEmailStore(bool throwOnFail = true)
+        {
+            var cast = Store as IUserEmailStore<owin_userEntity>;
+            if (throwOnFail && cast == null)
+            {
+                throw new NotSupportedException("StoreNotIUserEmailStore");
+            }
+            return cast;
+        }
+        private IUserSecurityStampStore<owin_userEntity> GetSecurityStore()
+        {
+            var cast = Store as IUserSecurityStampStore<owin_userEntity>;
+            if (cast == null)
+            {
+                throw new NotSupportedException("StoreNotIUserSecurityStampStore");
+            }
+            return cast;
+        }
     }
 }

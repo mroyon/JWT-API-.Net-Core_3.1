@@ -89,7 +89,7 @@ namespace CoreWebApp.Services
             services.AddSingleton<IRoleStore<IdentityRole>, CustomRoleStore>();
 
             services.AddScoped<IUserClaimsPrincipalFactory<owin_userEntity>, AdditionalUserClaimsPrincipalFactory>();
-
+            services.AddScoped<IPasswordHasher<owin_userEntity>, CusPasswordHasher<owin_userEntity>>();
 
             services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
             var JwtSettings = configuration.GetSection("JwtSettings").Get<JwtSettings>();

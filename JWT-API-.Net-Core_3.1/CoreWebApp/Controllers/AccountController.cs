@@ -292,6 +292,7 @@ namespace CoreWebApp.Controllers
             ModelState.Remove("passwordsalt");
             ModelState.Remove("passwordkey");
             ModelState.Remove("passwordvector");
+            ModelState.Remove("password");
             if (!ModelState.IsValid)
             {
                 return View(model);
@@ -312,7 +313,7 @@ namespace CoreWebApp.Controllers
                 model.BaseSecurityParam.createdbyusername = model.BaseSecurityParam.updatedbyusername = user.username;
                 model.BaseSecurityParam.createddate = model.BaseSecurityParam.updateddate = DateTime.Now;
             }
-            var result = await _userManager.ResetPasswordAsync(model, model.code, model.password);
+            var result = await _userManager.ResetPasswordAsync(model, model.code, model.newpassword);
             if (result.Succeeded)
             {
                 return RedirectToAction(nameof(AccountController.ResetPasswordConfirmation), "Account");

@@ -110,7 +110,12 @@ namespace CoreWebApp.CustomStores
 
         public Task<string> GetPasswordHashAsync(owin_userEntity user, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            cancellationToken.ThrowIfCancellationRequested();
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user));
+            }
+            return Task.FromResult(user.password);
         }
 
         public async Task<string> GetPhoneNumberAsync(owin_userEntity user, CancellationToken cancellationToken)
@@ -148,9 +153,10 @@ namespace CoreWebApp.CustomStores
             throw new NotImplementedException();
         }
 
-        public async Task<bool> HasPasswordAsync(owin_userEntity user, CancellationToken cancellationToken)
+        public Task<bool> HasPasswordAsync(owin_userEntity user, CancellationToken cancellationToken)
         {
-            return true;
+            cancellationToken.ThrowIfCancellationRequested();
+            return Task.FromResult(user.password != null);
         }
 
         public Task<bool> IsInRoleAsync(owin_userEntity user, string roleName, CancellationToken cancellationToken)
@@ -194,6 +200,7 @@ namespace CoreWebApp.CustomStores
 
         public async Task SetPasswordHashAsync(owin_userEntity user, string passwordHash, CancellationToken cancellationToken)
         {
+            user.password = passwordHash;
             var longVal = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor).UserResetPasswordAsync(user, cancellationToken);
         }
 
@@ -227,33 +234,38 @@ namespace CoreWebApp.CustomStores
         public async Task<IdentityResult> UpdateAsync(owin_userEntity user, CancellationToken cancellationToken)
         {
             IdentityResult result = IdentityResult.Failed();
-            if (user.strPerformAction.Contains("UpdateEmailAddress"))
+            if (user.strPerformAction != null && user.strPerformAction.Count > 0)
             {
-                long i = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor).UserEmailAddressConfirmed(user, cancellationToken);
-                if (i > 0)
+                if (user.strPerformAction.Contains("UpdateEmailAddress"))
                 {
-                    result = IdentityResult.Success;
+                    long i = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor).UserEmailAddressConfirmed(user, cancellationToken);
+                    if (i > 0)
+                    {
+                        result = IdentityResult.Success;
+                    }
                 }
-            }
-            if (user.strPerformAction.Contains("ConfirmEmail"))
-            {
-                user.emailaddress = null;
-                long i = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor).UserEmailAddressConfirmed(user, cancellationToken);
-                if (i>0)
+                if (user.strPerformAction.Contains("ConfirmEmail"))
                 {
-                    result = IdentityResult.Success;
+                    user.emailaddress = null;
+                    long i = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor).UserEmailAddressConfirmed(user, cancellationToken);
+                    if (i > 0)
+                    {
+                        result = IdentityResult.Success;
+                    }
                 }
-            }
-            if (user.strPerformAction.Contains("ConfirmMobile"))
-            {
-                long i = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor).UserPhoneNumberConfirmed(user, cancellationToken);
-                if (i > 0)
+                if (user.strPerformAction.Contains("ConfirmMobile"))
                 {
-                    result = IdentityResult.Success;
+                    long i = await BFC.FacadeCreatorObjects.Security.ExtendedPartial.FCCKAFUserSecurity.GetFacadeCreate(_contextAccessor).UserPhoneNumberConfirmed(user, cancellationToken);
+                    if (i > 0)
+                    {
+                        result = IdentityResult.Success;
+                    }
                 }
+                else
+                { }
             }
             else
-            { }
+                result = IdentityResult.Success;
 
             return result;
         }

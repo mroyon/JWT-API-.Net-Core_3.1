@@ -133,6 +133,7 @@ namespace CoreWebApp.Controllers
             ModelState.Remove("maspublickey");
             ModelState.Remove("password");
             ModelState.Remove("confirmpassword");
+            ModelState.Remove("newpassword");
             ModelState.Remove("passwordkey");
             ModelState.Remove("passwordvector");
             ModelState.Remove("passwordsalt");

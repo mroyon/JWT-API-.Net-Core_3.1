@@ -210,6 +210,37 @@
             <param name="email"></param>
             <returns></returns>
         </member>
+        <member name="M:CoreWebApp.CustomIdentityManagers.ApplicationUserManager`1.ChangePasswordAsync(BDO.DataAccessObjects.SecurityModule.owin_userEntity,System.String,System.String)">
+            <summary>
+            ChangePasswordAsync
+            </summary>
+            <param name="user"></param>
+            <param name="currentPassword"></param>
+            <param name="newPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CoreWebApp.CustomIdentityManagers.CusPasswordHasher`1">
+            <summary>
+            CusPasswordHasher
+            </summary>
+        </member>
+        <member name="M:CoreWebApp.CustomIdentityManagers.CusPasswordHasher`1.VerifyHashedPassword(BDO.DataAccessObjects.SecurityModule.owin_userEntity,System.String,System.String)">
+            <summary>
+            VerifyHashedPassword
+            </summary>
+            <param name="user"></param>
+            <param name="hashedPassword"></param>
+            <param name="providedPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.CustomIdentityManagers.CusPasswordHasher`1.HashPassword(BDO.DataAccessObjects.SecurityModule.owin_userEntity,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
         <member name="M:CoreWebApp.Descripter.CusIdentityErrorDescriber.DefaultError">
             <summary>
             Returns the default <see cref="T:Microsoft.AspNetCore.Identity.IdentityError"/>.
