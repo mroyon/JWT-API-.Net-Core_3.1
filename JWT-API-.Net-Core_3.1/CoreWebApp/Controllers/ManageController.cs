@@ -12,6 +12,10 @@ using CoreWebApp.InAppResources;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
+using System.Text;
+using Newtonsoft.Json;
+using System.Linq;
+using CoreWebApp.Models;
 
 namespace CoreWebApp.Controllers
 {
@@ -265,6 +269,109 @@ namespace CoreWebApp.Controllers
             StatusMessage = _sharedLocalizer["SET_PASSWORD_STATUS"];
 
             return RedirectToAction(nameof(SetPassword));
+        }
+
+        /// <summary>
+        /// PersonalData
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<IActionResult> PersonalData()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound(_sharedLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
+            }
+
+            return View();
+        }
+
+        /// <summary>
+        /// DownloadPersonalData
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DownloadPersonalData()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound(_sharedLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
+            }
+
+            _logger.LogInformation("User with ID '{UserId}' asked for their personal data.", _userManager.GetUserId(User));
+
+            // Only include personal data for download
+            var personalData = new Dictionary<string, string>();
+            var personalDataProps = typeof(owin_userEntity).GetProperties().Where(
+                            prop => Attribute.IsDefined(prop, typeof(PersonalDataAttribute)));
+            foreach (var p in personalDataProps)
+            {
+                personalData.Add(p.Name, p.GetValue(user)?.ToString() ?? "null");
+            }
+
+            Response.Headers.Add("Content-Disposition", "attachment; filename=PersonalData.json");
+            return new FileContentResult(Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(personalData)), "text/json");
+        }
+
+        /// <summary>
+        /// DeletePersonalData
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<IActionResult> DeletePersonalData()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound(_sharedLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
+            }
+
+            var deletePersonalDataViewModel = new DeletePersonalDataViewModel();
+            deletePersonalDataViewModel.RequirePassword = await _userManager.HasPasswordAsync(user);
+            return View(deletePersonalDataViewModel);
+        }
+
+
+        /// <summary>
+        /// DeletePersonalData
+        /// </summary>
+        /// <param name="deletePersonalDataViewModel"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeletePersonalData(DeletePersonalDataViewModel deletePersonalDataViewModel)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound(_sharedLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
+            }
+
+            deletePersonalDataViewModel.RequirePassword = await _userManager.HasPasswordAsync(user);
+            if (deletePersonalDataViewModel.RequirePassword)
+            {
+                if (!await _userManager.CheckPasswordAsync(user, deletePersonalDataViewModel.password))
+                {
+                    ModelState.AddModelError(string.Empty, _sharedLocalizer["INCORRECT_PASSWORD"]);
+                    return View(deletePersonalDataViewModel);
+                }
+            }
+
+            var result = await _userManager.DeleteAsync(user);
+            var userId = await _userManager.GetUserIdAsync(user);
+            if (!result.Succeeded)
+            {
+                throw new InvalidOperationException($"Unexpected error occurred deleteing user with ID '{userId}'.");
+            }
+
+            await _signInManager.SignOutAsync();
+
+            _logger.LogInformation("User with ID '{UserId}' deleted themselves.", userId);
+
+            return Redirect("~/");
         }
 
         private void AddErrors(IdentityResult result)

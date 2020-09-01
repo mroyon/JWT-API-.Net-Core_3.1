@@ -70,6 +70,7 @@ namespace BDO.DataAccessObjects.SecurityModule
         }
         
         [DataMember]
+        [PersonalDataAttribute]
         [Display(Name = "applicationid", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
         [Required(ErrorMessageResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user), ErrorMessageResourceName = "applicationidRequired")]
         public Guid ? applicationid
@@ -79,6 +80,7 @@ namespace BDO.DataAccessObjects.SecurityModule
         }
         
         [DataMember]
+        [PersonalDataAttribute]
         [Display(Name = "masteruserid", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
         [Required(ErrorMessageResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user), ErrorMessageResourceName = "masteruseridRequired")]
         public long ? masteruserid
@@ -89,6 +91,7 @@ namespace BDO.DataAccessObjects.SecurityModule
         
         [DataMember]
         [MaxLength(256)]
+        [PersonalDataAttribute]
         [Display(Name = "username", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
         [Required(ErrorMessageResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user), ErrorMessageResourceName = "usernameRequired")]
         public string username
@@ -99,6 +102,7 @@ namespace BDO.DataAccessObjects.SecurityModule
         
         [DataMember]
         [MaxLength(150)]
+        [PersonalDataAttribute]
         [Display(Name = "emailaddress", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
         [Required(ErrorMessageResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user), ErrorMessageResourceName = "emailaddressRequired")]
         public string emailaddress
@@ -119,6 +123,7 @@ namespace BDO.DataAccessObjects.SecurityModule
         
         [DataMember]
         [MaxLength(16)]
+        [PersonalDataAttribute]
         [Display(Name = "mobilenumber", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
         public string mobilenumber
         {
@@ -154,6 +159,7 @@ namespace BDO.DataAccessObjects.SecurityModule
         
         [DataMember]
         [MaxLength(1000)]
+        [PersonalDataAttribute]
         [Display(Name = "masprivatekey", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
         [Required(ErrorMessageResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user), ErrorMessageResourceName = "masprivatekeyRequired")]
         public string masprivatekey
@@ -164,6 +170,7 @@ namespace BDO.DataAccessObjects.SecurityModule
         
         [DataMember]
         [MaxLength(1000)]
+        [PersonalDataAttribute]
         [Display(Name = "maspublickey", ResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user))]
         [Required(ErrorMessageResourceType = typeof(CLL.LLClasses.SecurityModule._owin_user), ErrorMessageResourceName = "maspublickeyRequired")]
         public string maspublickey

@@ -2415,3 +2415,5 @@ D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\n
 D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Manage\ChangePassword.cshtml.g.cs
 D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Manage\SetPassword.cshtml.g.cs
 D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\ConfirmEmail.cshtml.g.cs
+D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Manage\PersonalData.cshtml.g.cs
+D:\moFRomHome\JWT-API-.Net-Core_3.1\JWT-API-.Net-Core_3.1\CoreWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Manage\DeletePersonalData.cshtml.g.cs

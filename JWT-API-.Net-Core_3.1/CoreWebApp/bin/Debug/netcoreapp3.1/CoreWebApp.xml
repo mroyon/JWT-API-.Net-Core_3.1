@@ -110,6 +110,31 @@
             Shows the error page
             </summary>
         </member>
+        <member name="M:CoreWebApp.Controllers.ManageController.PersonalData">
+            <summary>
+            PersonalData
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.ManageController.DownloadPersonalData">
+            <summary>
+            DownloadPersonalData
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.ManageController.DeletePersonalData">
+            <summary>
+            DeletePersonalData
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CoreWebApp.Controllers.ManageController.DeletePersonalData(CoreWebApp.Models.DeletePersonalDataViewModel)">
+            <summary>
+            DeletePersonalData
+            </summary>
+            <param name="deletePersonalDataViewModel"></param>
+            <returns></returns>
+        </member>
         <member name="M:CoreWebApp.Controllers.SetLanguageController.Index">
             <summary>
             
