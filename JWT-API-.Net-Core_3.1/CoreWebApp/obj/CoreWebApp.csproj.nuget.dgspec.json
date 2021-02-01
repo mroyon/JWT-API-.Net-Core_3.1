@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApp\\CoreWebApp.csproj": {}
+    "D:\\Projects\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApp\\CoreWebApp.csproj": {}
   },
   "projects": {
-    "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj": {
+    "D:\\Projects\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj",
+        "projectUniqueName": "D:\\Projects\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj",
         "projectName": "AppConfig",
-        "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\AppConfig\\obj\\",
+        "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj",
+        "packagesPath": "C:\\Users\\KSCAdmin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\AppConfig\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KSCAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +31,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
               }
             }
           }
@@ -71,21 +70,20 @@
         }
       }
     },
-    "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
+    "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj",
+        "projectUniqueName": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj",
         "projectName": "BDO",
-        "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\obj\\",
+        "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj",
+        "packagesPath": "C:\\Users\\KSCAdmin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KSCAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -99,8 +97,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj"
               }
             }
           }
@@ -142,21 +140,20 @@
         }
       }
     },
-    "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFC\\BFC.csproj": {
+    "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFC\\BFC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFC\\BFC.csproj",
+        "projectUniqueName": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFC\\BFC.csproj",
         "projectName": "BFC",
-        "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFC\\BFC.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFC\\obj\\",
+        "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFC\\BFC.csproj",
+        "packagesPath": "C:\\Users\\KSCAdmin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KSCAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -170,11 +167,11 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj"
               }
             }
           }
@@ -212,21 +209,20 @@
         }
       }
     },
-    "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj": {
+    "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj",
+        "projectUniqueName": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj",
         "projectName": "BFO",
-        "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFO\\obj\\",
+        "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj",
+        "packagesPath": "C:\\Users\\KSCAdmin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KSCAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -240,17 +236,17 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj"
               }
             }
           }
@@ -282,21 +278,20 @@
         }
       }
     },
-    "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {
+    "D:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
+        "projectUniqueName": "D:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
         "projectName": "CLL",
-        "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\CLL\\obj\\",
+        "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
+        "packagesPath": "C:\\Users\\KSCAdmin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KSCAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -342,21 +337,20 @@
         }
       }
     },
-    "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj": {
+    "D:\\Projects\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj",
+        "projectUniqueName": "D:\\Projects\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj",
         "projectName": "DAC.Core",
-        "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\DAC\\obj\\",
+        "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\DAC\\DAC.csproj",
+        "packagesPath": "C:\\Users\\KSCAdmin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\DAC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KSCAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -370,14 +364,14 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj"
               }
             }
           }
@@ -419,21 +413,20 @@
         }
       }
     },
-    "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj": {
+    "D:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj",
+        "projectUniqueName": "D:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj",
         "projectName": "IBFO",
-        "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IBFO\\obj\\",
+        "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj",
+        "packagesPath": "C:\\Users\\KSCAdmin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KSCAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -447,8 +440,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
               }
             }
           }
@@ -486,21 +479,20 @@
         }
       }
     },
-    "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj": {
+    "D:\\Projects\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj",
+        "projectUniqueName": "D:\\Projects\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj",
         "projectName": "IDAC",
-        "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IDAC\\obj\\",
+        "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj",
+        "packagesPath": "C:\\Users\\KSCAdmin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\IDAC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KSCAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -514,8 +506,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
               }
             }
           }
@@ -547,21 +539,20 @@
         }
       }
     },
-    "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApplicationFilters\\CoreWebApplicationFilters.csproj": {
+    "D:\\Projects\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApplicationFilters\\CoreWebApplicationFilters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApplicationFilters\\CoreWebApplicationFilters.csproj",
+        "projectUniqueName": "D:\\Projects\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApplicationFilters\\CoreWebApplicationFilters.csproj",
         "projectName": "CoreWebApplicationFilters",
-        "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApplicationFilters\\CoreWebApplicationFilters.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApplicationFilters\\obj\\",
+        "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApplicationFilters\\CoreWebApplicationFilters.csproj",
+        "packagesPath": "C:\\Users\\KSCAdmin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApplicationFilters\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KSCAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -575,11 +566,11 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
               }
             }
           }
@@ -629,21 +620,20 @@
         }
       }
     },
-    "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApp\\CoreWebApp.csproj": {
+    "D:\\Projects\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApp\\CoreWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApp\\CoreWebApp.csproj",
+        "projectUniqueName": "D:\\Projects\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApp\\CoreWebApp.csproj",
         "projectName": "CoreWebApp",
-        "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApp\\CoreWebApp.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApp\\obj\\",
+        "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApp\\CoreWebApp.csproj",
+        "packagesPath": "C:\\Users\\KSCAdmin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KSCAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -657,29 +647,29 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\AppConfig\\AppConfig.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BDO\\BDO.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFC\\BFC.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFC\\BFC.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFC\\BFC.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFC\\BFC.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\BFO\\BFO.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\IBFO\\IBFO.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\IDAC\\IDAC.csproj"
               },
-              "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApplicationFilters\\CoreWebApplicationFilters.csproj": {
-                "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApplicationFilters\\CoreWebApplicationFilters.csproj"
+              "D:\\Projects\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApplicationFilters\\CoreWebApplicationFilters.csproj": {
+                "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\JWT-API-.Net-Core_3.1\\CoreWebApplicationFilters\\CoreWebApplicationFilters.csproj"
               }
             }
           }

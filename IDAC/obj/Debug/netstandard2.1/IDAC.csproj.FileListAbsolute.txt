@@ -124,3 +124,17 @@ D:\moFRomHome\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.csproj.Co
 D:\moFRomHome\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.csproj.CopyComplete
 D:\moFRomHome\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.dll
 D:\moFRomHome\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.pdb
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\IDAC.deps.json
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\IDAC.dll
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\IDAC.pdb
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\BDO.dll
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\CLL.dll
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\BDO.pdb
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\bin\Debug\netstandard2.1\CLL.pdb
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.csprojAssemblyReference.cache
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.AssemblyInfoInputs.cache
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.AssemblyInfo.cs
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.csproj.CoreCompileInputs.cache
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.csproj.CopyComplete
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.dll
+D:\Projects\JWT-API-.Net-Core_3.1\IDAC\obj\Debug\netstandard2.1\IDAC.pdb

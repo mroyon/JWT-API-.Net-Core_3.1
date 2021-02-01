@@ -93,6 +93,17 @@ namespace JWTApiExample.Controllers
             return Unauthorized();
         }
 
+        // POST api/auth/refreshtoken
+        [HttpPost("refreshtoken")]
+        public async Task<ActionResult> RefreshToken([FromBody] ExchangeRefreshTokenRequest request)
+        {
+            if (!ModelState.IsValid) { return BadRequest(ModelState); }
+            await _exchangeRefreshTokenUseCase.Handle(new ExchangeRefreshTokenRequest(request.AccessToken, request.RefreshToken, _authSettings.SecretKey), _exchangeRefreshTokenPresenter);
+            return _exchangeRefreshTokenPresenter.ContentResult;
+        }
+
+        //IRefreshTokenService
+
 
     }
 }

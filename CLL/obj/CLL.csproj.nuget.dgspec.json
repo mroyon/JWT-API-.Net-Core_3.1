@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {}
+    "D:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {}
   },
   "projects": {
-    "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {
+    "D:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
+        "projectUniqueName": "D:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
         "projectName": "CLL",
-        "projectPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\moFRomHome\\JWT-API-.Net-Core_3.1\\CLL\\obj\\",
+        "projectPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\CLL.csproj",
+        "packagesPath": "C:\\Users\\KSCAdmin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\JWT-API-.Net-Core_3.1\\CLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KSCAdmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

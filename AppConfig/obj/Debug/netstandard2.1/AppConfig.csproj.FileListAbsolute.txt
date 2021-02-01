@@ -124,3 +124,17 @@ D:\moFRomHome\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig
 D:\moFRomHome\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CopyComplete
 D:\moFRomHome\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.dll
 D:\moFRomHome\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.pdb
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\AppConfig.deps.json
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\AppConfig.dll
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\AppConfig.pdb
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\BDO.dll
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\CLL.dll
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\BDO.pdb
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\bin\Debug\netstandard2.1\CLL.pdb
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.csprojAssemblyReference.cache
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.AssemblyInfoInputs.cache
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.AssemblyInfo.cs
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CoreCompileInputs.cache
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.csproj.CopyComplete
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.dll
+D:\Projects\JWT-API-.Net-Core_3.1\AppConfig\obj\Debug\netstandard2.1\AppConfig.pdb
